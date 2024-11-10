@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+@media screen and (max-width: 1024px) {
+    
+    #logo {
+        margin-right: 3rem;
+        margin-left: 0;
+    }
+
+    #contact {
+        margin-left: 3rem;
+    }
+
+    nav li {
+        padding: 3rem 1rem;
+    }
+
+    #bars {
+        display: none;
+    }
+
+    .intro-text2 {
+        width: 45rem;
+    }
+
+    .intro-text2 p {
+       font-size: 1.5rem;
+    }
+
+    .intro-text3 {
+        width: 45rem;
+    }
+
+    .intro-text3 p {
+      font-size: 1.5rem;
+    }
+
+    .flexbox {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .flexbox1 {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .intro-text4 {
+        width: 45rem;
+    }
+
+    .intro-text5 {
+        width: 45rem;
+    }
+
+    .intro-text4 p {
+        font-size: 1.5rem;
+    }
+
+    .intro-text5 p {
+        font-size: 1.5rem;
+    }
+
+    .smart h3{
+       font-size: 4rem;
+    }
+
+    .smart {
+        padding-top: 2.5rem;
+    }
+
+    .smart img {
+        margin-right: 1rem;
+    }
+
+    .flexbox2 {
+        margin-left: 3rem;
+    }
+
+    .five {
+        height: 105rem;
+    }
+
+    table {
+        margin-left: 5rem;
+    }
+
+    th {
+        font-size: 2rem;
+    }
+
+    td a {
+        font-size: 1.4rem;
+    }
+}
+
+
+@media screen and (max-width: 820px) {
+    
+    #logo {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #contact {
+        margin-left: 0;
+    }
+
+    #bars {
+        display: none;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    .intro-text h3 {
+        font-size: 2rem;
+    }
+
+    .intro-text2 {
+        width: 35rem;
+        margin-right: 2rem;
+    }
+
+    .intro-text2 img {
+        width: 20rem;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .intro-text2 p {
+        font-size: 1.3rem;
+    }
+
+    .intro-text3 {
+        width: 35rem;
+    }
+
+    .intro-text3 img {
+        width: 20rem;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .intro-text3 p {
+        font-size: 1.3rem;
+    }
+
+    .intro-text4 {
+        width: 35rem;
+        margin-right: 2rem;
+    }
+
+    .intro-text4 img {
+        width: 20rem;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .intro-text4 p {
+        font-size: 1.3rem;
+    }
+ 
+    .intro-text5 {
+        width: 35rem;
+    }
+
+    .intro-text5 img {
+        width: 20rem;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .intro-text5 p {
+        font-size: 1.3rem;
+    }
+
+    .smart h3 {
+        font-size: 2rem;
+    }
+
+    .smart p {
+        font-size: 1.5rem;
+    }
+
+    .flexbox3 {
+        flex-direction: column;
+    }
+
+    .five {
+        height: 300rem;
+    }
+
+    .free {
+       margin-top: 8rem;
+       margin-left: 15rem;
+    }
+
+    .premium {
+        margin-top: 10rem;
+        margin-left: 15rem;
+    }
+
+    .business {
+        margin-top: 10rem;
+        margin-left: 15rem;
+    }
+
+
+    table {
+        margin-left: 1rem;
+    }
+
+    th {
+        padding: 4rem 2rem;
+    }
+
+    td {
+        padding: 1.5rem;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+     
+
+    .start {
+        display: none;
+    }
+
+    #logo {
+        display: flex;
+        margin-left: 5rem;
+    }
+
+    nav a{
+        display: none;
+    }
+
+    #bars {
+        display: flex;
+        font-size: 4rem;
+        margin-left: 35rem;
+    }
+
+    .intro-text h3 {
+        font-size: 2rem;
+    }
+
+    .intro-text p {
+        font-size: 1.3rem;
+    }
+
+    .intro-text2 {
+        width: 35rem;
+    }
+
+    .intro-text2 img {
+        width: 20rem;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .intro-text2 p {
+        font-size: 1.3rem;
+    }
+
+    .intro-text3{
+        width: 35rem;
+    }
+
+    .intro-text3 img {
+        width: 20rem;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .intro-text4 {
+        width: 35rem;
+    }
+
+    .intro-text4 img {
+        width: 20rem;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .intro-text4 p {
+        font-size: 1.3rem;
+    }
+
+    .intro-text5 {
+        width: 35rem;
+    }
+
+    .intro-text5 img {
+        width: 20rem;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .intro-text5 p {
+        font-size: 1.3rem;
+    }
+
+    .smart h3 {
+        font-size: 2rem;
+    }
+
+    .smart p {
+        font-size: 1.2rem;
+    }
+
+    .flexbox3 {
+        flex-direction: column;
+    }
+
+    .five {
+        height: 300rem;
+    }
+
+    .free {
+       margin-top: 8rem;
+       margin-left: 15rem;
+    }
+
+    .premium {
+        margin-top: 10rem;
+        margin-left: 15rem;
+    }
+
+    .business {
+        margin-top: 10rem;
+        margin-left: 15rem;
+    }
+
+    table {
+        margin-left: 1rem;
+    }
+
+    th {
+        padding: 4rem 2rem;
+    }
+
+    td {
+        padding: 1.5rem 2rem;
+    }
+}
