@@ -91,7 +91,9 @@ body {
 .nav-container .flex-item3 {
     margin-left: 8rem;
 }
-
+.nav-container .main-logo img{
+    width: 80%;
+}
 .nav-container ul li{
     list-style-type: none;
     float: left;
@@ -99,8 +101,9 @@ body {
     font-size: 1.65rem;
     font-weight: 550;
 }
-
-
+.burger {
+    display: none;
+}
 
 /* .nav-container ul li a:visited, .nav-container ul li a:active{
     background: var(--dark-green);
@@ -123,7 +126,7 @@ body {
 
 .hero {
     background: url('images/modern-home-office-with-technology-decoration-generated-by-ai\ 1.png');
-    min-height: 80vh;
+    min-height: 100vh;
     background-size: cover;
     width: 100vw;
     position: relative;
@@ -298,6 +301,9 @@ padding: 0 4rem;
 .discover-home .content-wrapper .bold {
     font-size: 3.8rem;
 }
+.discover-home .content-wrapper .bold img{
+    width: 100%;
+}
 .discover-home .content-wrapper .flex-item {
     width: 37vw;
     height: 80vh;
@@ -308,9 +314,10 @@ padding: 0 4rem;
     text-align: left;
     padding: 1rem 5rem;
 }
-.discover-home .overlay{
-    width: 31vw;
+.discover-home .content-wrapper .overlay{
+    width: 37vw;
     height: 80vh;
+    padding: 0 !important;
     border-radius: 2rem;
     z-index: 0;
     background-color: var(--overlay-mid);
@@ -320,7 +327,7 @@ padding: 0 4rem;
 }
 .discover-home .content-wrapper .flex-item .text{
     position: relative;
-    top: 60%;
+    top: 50%;
 
 }
 .discover-home .content-wrapper #voice{
@@ -431,7 +438,7 @@ padding: 0 4rem;
     font-size: 2.4rem;
 }
 .plans .content-wrapper .image-wrapper .plan{
-    width: 375px;
+    width: 37.5rem;
     background-color: var(--white);
     padding: 2rem;
 }
@@ -504,7 +511,7 @@ line-height: 150%;
     background-color: var(--white);
     height: 69.2rem;
     flex-direction: column;
-    right: 14%;
+    right: 12.5%;
     z-index: 0;
     border: 0.2rem solid var(--pure-black);
     border-radius: 1.5rem;
@@ -529,7 +536,7 @@ line-height: 150%;
     background-color: var(--light-green);
 }
  .app-link-wrapper{
-    height: 40vh;
+    min-height: 40vh;
     background-color: var(--light-green);
     padding-bottom: 4rem;
 }
@@ -698,7 +705,7 @@ button, a.button{
     height: 4.8rem;
     border-radius: 1rem;
     border: 0.12rem solid #818282;
-    margin-right: 9.9rem;
+    margin-right: 2%;
 }
 .help form input::placeholder {
     padding-left: 2rem;
@@ -754,6 +761,10 @@ button, a.button{
 }
 .faq .flex-box span {
     width: 50%;
+}
+.faq .questions-text i {
+    width: 100%;
+    text-align: right;
 }
 .repair {
     background-color: var(--mid-green);
@@ -816,6 +827,6 @@ button, a.button{
     text-align: center;
 }
 .app-links .app-link-wrapper{
+    min-height: 47vh;
     padding: 6rem 0 0 4rem;
-    
 }

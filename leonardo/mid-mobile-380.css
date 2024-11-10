@@ -33,7 +33,7 @@
         padding: 1rem 0.5rem 1rem 1rem;
     }
     .lang-section .empty {
-        width: 85vw;
+        max-width: 60%;
     }
     .lang-section .icons ul li {
         float: left;
@@ -51,41 +51,51 @@
         border-right: 0.3rem solid var(--white);
     }
     .lang-section #padding-right {
-        padding-right: 3.5rem;
+        padding-right: 2rem;
     }
     .nav-container{
         background: var(--light-green);
         width: 100vw;
-        height: 12vh;
+        height: auto;
         font-size: 1.2rem;
+        flex-direction: column;
         color: var(--dark-green);
         box-shadow: 0 0.5rem 1rem var(--overlay);
     }
     .nav-container aside{
-        display: none;
-        visibility: hidden;
+        display: block;
+        visibility: visible;
         }
     
     .nav-container .flex-item1 {
-        margin-left: 10rem;
+        margin-left: 0;
     }
     
     .nav-container .flex-item2{
-        margin-left: 4rem;
+        margin-left: 0;
+        padding: 3rem 0;
+        width: 100%;
     }
     .nav-container .flex-item3 {
-        margin-left: 4rem;
+        margin-left: 0;
+        padding: 3rem 0;
     }
     
     .nav-container ul li{
         list-style-type: none;
-        float: left;
-        padding: 0 1.5rem;
-        font-size: 1.4rem;
+        clear: left;
+        padding: 1rem 1.5rem;
+        font-size: 1.8rem;
         font-weight: 550;
+        width: 100%;
     }
+    /* .nav-container ul li a{
+        width: 100vw;
+        background-color: var(--dark-green);
+        color: var(--white);
+    } */
     .nav-container .main-logo img{
-        scale: 40%;
+        scale: 80%;
     }
     
     
@@ -334,7 +344,7 @@
         text-align: left;
         padding: 1rem 2rem;
     }
-    .discover-home .overlay{
+    .discover-home .content-wrapper .overlay{
         padding: 0 !important;
         width: 90vw;
         height: 80vh;
@@ -548,7 +558,7 @@
         right: 0;
         border: 0.2rem solid var(--pure-black);
         border-radius: 1.5rem;
-        top: -13%;
+        top: -36rem;
         box-shadow: 0.01rem 0.01rem 0.3rem 0.003rem var(--black);
     }
     .plans button {
@@ -559,6 +569,7 @@
         flex-direction: column;
         width: 100%;
     }
+
     .plans .text-wrapper{
         width: 100%;
         min-height: 45vh;
@@ -692,10 +703,10 @@
     /* Get Inspired Page Styling */
     
     .auto-layout{
-        padding: 6rem;
+        padding: 2rem;
     }
     .auto-layout .layout-content {
-        height: 45rem;
+        height: 25rem;
     }
     .auto-layout .layout-content img{
         height: 100%;
@@ -721,15 +732,16 @@
     
     .smarts .image-holder #img-left{
         margin-right: -2rem;
-        height: 30rem;
+        height: 20rem;
     }
     .smarts .image-holder #img-right{
         margin-left: -2rem;
         z-index: -1;
-        height: 30rem;
+        height: 20rem;
     }
     .smarts #img-mid{
         height: 30rem;
+        display: none;
     }
     .matter {
         background-color: var(--light-green);
@@ -740,7 +752,7 @@
         align-self: center;
     }
     .matter .image-holder img {
-        height: 50rem;
+        height: 20rem;
     }
     .matter h3, .devices h3{
         font-size: 2.6rem;
@@ -755,22 +767,31 @@
         min-height: 80vh;
     }
     .devices .image-holder img{
-        height: 50rem;
+        height: 26rem;
     }
     .app-links {
         background-color: var(--light-green);
         padding: 2rem 0 4rem;
+        width: 100%;
+        min-height: 80vh;
     }
     .app-links .app-link-wrapper{
-        padding: 4rem 0;
+        padding: 2rem 0;
+        width: 100%;
+    }
+    .app-link-wrapper .flex-box{
+        flex-direction: row;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
     .app-links .app-link-wrapper img#tab{
-        left: -20%;
-        top: -40%;
+        left: -18rem;
     }
     .app-links .app-link-wrapper img#iphone{
         top: -25%;
         right: -1%;
+        display: block;
     }
     
     
