@@ -149,7 +149,7 @@ nav ul {
 
 .privacy {
     color: white;
-    background-image: url('Images/unsplash_R7brfY3NKKA\ \(1\).png');
+    background-image: url('../images/unsplash_R7brfY3NKKA\ \(1\).png');
     min-height: 70rem;
     width: 60rem;
     border-radius: 25px;
@@ -186,7 +186,7 @@ nav ul {
 }
 
 .eco {
-    background-image: url('Images/Advanced\ Voice\ Recognition.png');
+    background-image: url('../images/Advanced\ Voice\ Recognition.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 70rem;
@@ -223,7 +223,7 @@ nav ul {
 }
 
 .community {
-    background-image: url('Images/Pexels\ Photo\ by\ Yan\ Krukau.png');
+    background-image: url('../images/Pexels\ Photo\ by\ Yan\ Krukau.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 70rem;
@@ -251,7 +251,7 @@ nav ul {
 }
 
 .unified {
-    background-image: url('Images/Pexels\ Photo\ by\ Kindel\ Media.png');
+    background-image: url('../images/Pexels\ Photo\ by\ Kindel\ Media.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 70rem;
@@ -274,7 +274,7 @@ nav ul {
 }
 
 .routines {
-    background-image: url('Images/Pexels\ Photo\ by\ cottonbro\ studio.png');
+    background-image: url('../images/Pexels\ Photo\ by\ cottonbro\ studio.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 70rem;
@@ -306,7 +306,7 @@ nav ul {
 }
 
 .voice {
-    background-image: url('Images/Pexels\ Photo\ by\ Andrea\ Piacquadio.png');
+    background-image: url('../images/Pexels\ Photo\ by\ Andrea\ Piacquadio.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 70rem;
@@ -329,7 +329,7 @@ nav ul {
 }
 
 .track {
-    background-image: url('Images/Pexels\ Photo\ by\ Photo\ By_\ Kaboompics.com.png');
+    background-image: url('../images/Pexels\ Photo\ by\ Photo\ By_\ Kaboompics.com.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 70rem;
