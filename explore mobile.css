@@ -24,7 +24,7 @@ html {
 
     #bars {
         display: flex;
-        margin-left: 20rem;
+        margin-left: 27rem;
         font-size: 4rem;
     }
 
@@ -196,6 +196,10 @@ html {
     td a {
         font-size: 1rem;
     }
+
+    footer {
+        height: 85rem;
+    }
 }
 
 
@@ -204,6 +208,15 @@ html {
     #bars {
         margin-left: 18rem;
     }
+
+    .flexbox {
+        margin-left: 4rem;
+    }
+
+    footer {
+        height: 100rem;
+    }
+
 }
 
 @media screen and (max-width: 320px) {
@@ -213,20 +226,39 @@ html {
         margin-left: 13rem;
     }
 
-    .eco {
-        height: 35rem;
-        width: 20rem;
-    }
-
-    .eco h3 {
-        font-size: 1.5rem;
-    }
-
-    .eco p {
-        font-size: 1rem;
+    #overlay {
+        height: 45rem;
     }
 
     .flexbox{
         margin-left: 1rem;
+    }
+
+    .smart {
+        padding-top: 0;
+    }
+
+    .smart h3 {
+        font-size: 2rem;
+    }
+
+    .smart p {
+        font-size: 1rem;
+    }
+
+    table {
+        margin-left: 0;
+    }
+
+    th {
+        padding: 4rem 0.7rem;
+    }
+
+    td {
+        padding: 1.5rem 0.7rem;
+    }
+
+    footer {
+        height: 100rem;
     }
 }

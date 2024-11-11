@@ -143,11 +143,15 @@ html {
     }
 
     .data p {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
     .data {
         height: 30rem;
+    }
+
+    .data a {
+        padding: 1rem 1.5rem;
     }
 
     .freq h3 {
@@ -280,6 +284,7 @@ html {
      }
 
      .intro {
+        padding-top: 7rem;
         padding-left: 7rem;
      }
 
@@ -299,6 +304,11 @@ html {
         font-size: 0.5rem;
      }
 
+     .data a {
+         padding: 1.5rem 1.5rem;
+         font-size: 1rem;
+     }
+     
      .smart {
         margin-left: 0;
      }
@@ -329,11 +339,12 @@ html {
 
      .intro {
         padding-top: 7rem;
-        padding-left: 4rem;
+        padding-left: 3rem;
      }
 
+
      .intro-text h3 {
-        font-size: 0.8rem;
+        font-size: 0.5rem;
      }
 
      .intro-text p {
