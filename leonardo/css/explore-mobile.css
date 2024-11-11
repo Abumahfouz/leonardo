@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@media screen and (max-width: 500px) {
+    
+    .start {
+        display: none;
+    }
+
+    nav li {
+        display: none;
+    }
+
+    #logo {
+        display: flex;
+    }
+
+    #bars {
+        display: flex;
+        margin-left: 20rem;
+        font-size: 4rem;
+    }
+
+    .dynamic {
+        min-height: 45rem;
+        width: 30rem;
+    }
+
+    .dynamic img {
+        width: 20rem;
+    }
+
+    .dynamic h3 {
+        font-size: 2rem;
+    }
+
+    .dynamic p {
+        font-size: 1rem;
+    }
+
+    .flexbox {
+        margin-left: 5rem;
+    }
+
+    .privacy {
+        min-height: 45rem;
+        width: 30rem;
+        background-position: center;
+    }
+
+    .privacy h3 {
+        font-size: 2rem;
+    }
+
+    .privacy p {
+        font-size: 1rem;
+    }
+
+    .one {
+        height: 100rem;
+    }
+
+    .eco {
+        height: 45rem;
+        width: 30rem;
+    }
+
+    .eco h3 {
+        font-size: 2rem;
+    }
+
+    .eco p {
+        font-size: 1rem;
+    }
+
+    .community {
+        height: 45rem;
+        width: 30rem;
+        background-position: center;
+        padding-left: 1rem;
+    }
+
+    .community h3 {
+        font-size: 2rem;
+    }
+
+    .community p {
+        font-size: 1rem;
+    }
+
+    #overlay {
+        height: 45rem;
+    }
+
+    .two {
+        height: 100rem;
+    }
+
+    .unified {
+        height: 45rem;
+        width: 30rem;
+    }
+
+    .unified h3 {
+        font-size: 2rem;
+    }
+
+    .unified p {
+        font-size: 1rem;
+    }
+
+    .routines {
+        height: 45rem;
+        width: 30rem;
+    }
+
+    .routines h3 {
+        font-size: 2rem;
+    }
+
+    .routines p {
+        font-size: 1rem;
+    }
+
+    .voice {
+        height: 45rem;
+        width: 30rem;
+    }
+
+    .voice h3 {
+        font-size: 2rem;
+    }
+
+    .voice p {
+        font-size: 1rem;
+    }
+
+    .track {
+        height: 45rem;
+        width: 30rem;
+    }
+
+    .track h3 {
+        font-size: 2rem;
+    }
+
+    .track p {
+        font-size: 1rem;
+    }
+
+    .four {
+        height: 100rem;
+    }
+
+    .five {
+        height: 70rem;
+    }
+
+    .flexbox2 {
+        flex-direction: column;
+    }
+
+    #iphone {
+        display: none;
+    }
+
+    .smart-img img {
+        margin-top: 7rem;
+        width: 20rem;
+    }
+
+    .service h3 {
+        font-size: 2rem;
+    }
+
+    .service p {
+        font-size: 1.3rem;
+    }
+
+    th {
+        font-size: 1rem;
+        padding: 4rem 1rem;
+    }
+
+    td {
+        padding: 1.5rem 1rem;
+    }
+
+    td a {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    
+    #bars {
+        margin-left: 18rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+
+    #bars {
+        margin-left: 13rem;
+    }
+
+    .eco {
+        height: 35rem;
+        width: 20rem;
+    }
+
+    .eco h3 {
+        font-size: 1.5rem;
+    }
+
+    .eco p {
+        font-size: 1rem;
+    }
+
+    .flexbox{
+        margin-left: 1rem;
+    }
+}
