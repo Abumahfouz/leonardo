@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/main-tablet-1024.css" media="(max-width:1024px)">
     <link rel="stylesheet" href="../css/mid-tablet-820.css" media="(max-width:820px)">
     <link rel="stylesheet" href="../css/mini-tablet-768.css" media="(max-width:768px)">
+    <link rel="stylesheet" href="../css/large-mobile.css" media="(max-width:600px")>
     <link rel="stylesheet" href="../css/main-mobile-500.css" media="(max-width:500px)">
     <link rel="stylesheet" href="../css/mini-mobile-320.css" media="(max-width:320px)">
     <link rel="stylesheet" href="../css/mid-mobile-380.css" media="(max-width:380px)">
@@ -37,12 +38,12 @@
             <aside class="flex-item flex-item2">
                 <nav>
                 <ul>
-                    <li><a href="index.html">Overview</a></li>
-                    <li><a href="accessories.html">Accessories <i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="aboutUs.html">About Leonardo <i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="inspired.html">Get Inspired <i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="explore.html">Explore</a></li>
-                    <li><a href="support.html">Support</a></li>
+                    <li><a href="index.html" id="index">Overview</a></li>
+                    <li><a href="accessories.html" id="accessories">Accessories <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="aboutUs.html" id="about">About Leonardo <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="inspired.html" id="inspired">Get Inspired <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="explore.html" id="explore">Explore</a></li>
+                    <li><a href="support.html" id="suppor">Support</a></li>
                 </ul>
                 </nav>
             </aside>
@@ -68,10 +69,10 @@
         </p>
         <div class="button-holder flex-box flex-item flex-item4">
             <div class="get-started">
-               <button id="start"> Get Started for Free</button>
+               <button id="start" onclick="alert('Downloading...')"> Get Started for Free</button>
             </div>
             <div class="explore">
-                <button id="explore">Explore Leonardo</button>
+                <button id="explore" onclick="(open('index.html'))">Explore Leonardo</button>
             </div>
         </div>
     </div>
@@ -87,7 +88,7 @@
                     The Leonardo app gives you control across all smart home and <br> office devices from your phone. Convenient right?
                 </p>
                 <p>
-                    <button class="more">Download Now</button>
+                    <button class="more download-btn" onclick="alert('Downloading...')">Download Now</button>
                 </p>
             </div>
             <div class="image-wrapper flex-item flex-item2">
@@ -124,15 +125,15 @@
             <div class="text-wrapper flex-item">
                 <ul>
                     <li>Accessibility</li>
-                    <li>Automation Home/Office</li>
-                    <li>Customized Automation</li>
-                    <li>Cross Platform Compatibility</li>
-                    <li>Privacy and Security</li>
-                    <li>Frequently Asked Questions</li>
+                    <li >Automation Home/Office</li>
+                    <li >Customized Automation</li>
+                    <li >Cross Platform Compatibility</li>
+                    <li >Privacy and Security</li>
+                    <li >Frequently Asked Questions</li>
                 </ul>
 
                 <div class="action">
-                    <a href="about.html" class="button">Learn More</a>
+                    <a href="../pages/aboutUs.html" class="button">Learn More</a>
                 </div>
             </div>
         </div>
@@ -200,7 +201,7 @@
             </div>
         </div>
     </section>
-    <section class="partners">
+    <section class="partners" id="partner-nav">
         <div class="content-wrapper">
             <h3><span id="yellow">Our</span> Trusted Partners</h3>
 
@@ -690,8 +691,8 @@
                     <h3>Get the Leonardo Smart <br> Assistant App</h3>
                     <p>The Smarter way to get things done</p>
                     <p>
-                        <span><img src="../images/GOOGLE PLAY.png" alt="Google Play"></span>
-                        <span><img src="../images/APPLE STORE.png" alt="App Store"></span>
+                        <span class="download-btn"><img src="../images/GOOGLE PLAY.png" alt="Google Play"></span>
+                        <span class="download-btn"><img src="../images/APPLE STORE.png" alt="App Store"></span>
                     </p>
                 </div>
                 <div class="download-img relative flex-item flex-item2">
@@ -753,6 +754,6 @@
             <p>Copyright &copy; 2024 Leonardo. All rights reserved.</p>
         </section>
     </footer>
-    <script src="app.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 </html>

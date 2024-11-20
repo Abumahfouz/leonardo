@@ -19,6 +19,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 html{
     font-size: 62.5%;
@@ -115,6 +116,14 @@ body {
     text-decoration: none;
     color: var(--dark-green);
 }
+.nav-container ul li a:link{
+    color: var(--dark-green);
+}
+/* .nav-container ul li a:visited {
+    background-color: var(--dark-green);
+    color: var(--white);
+} */
+
 .nav-container ul li a:hover{
     background: var(--orange);
     border-radius: 15px;
@@ -123,6 +132,20 @@ body {
     transition: color 1s;
     /* animation: position-switch 4s infinite linear; */
 }
+.nav-container ul li:active {
+    color: var(--white);
+}
+#index {
+    background-color: var(--dark-green);
+    color: var(--white);
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+/* .nav-container ul li a:active {
+    background-color: var(--dark-green);
+    color: var(--white);
+} */
 
 .hero {
     background: url('../images/modern-home-office-with-technology-decoration-generated-by-ai\ 1.png');
@@ -328,7 +351,6 @@ padding: 0 4rem;
 .discover-home .content-wrapper .flex-item .text{
     position: relative;
     top: 50%;
-
 }
 .discover-home .content-wrapper #voice{
     background: url('../images/Pexels\ Photo\ by\ Andrea\ Piacquadio.png');
@@ -354,6 +376,7 @@ padding: 0 4rem;
     !important
     ;
 }
+
 .partners h3{
     font-size: 4.5rem;
     text-align: center;
@@ -481,7 +504,7 @@ line-height: 150%;
     background-color: var(--white);
     height: 69.2rem;
     flex-direction: column;
-    left: 12%;
+    left: 14%;
     z-index: 0;
     border: 0.2rem solid var(--pure-black);
     border-radius: 1.5rem;
@@ -511,7 +534,7 @@ line-height: 150%;
     background-color: var(--white);
     height: 69.2rem;
     flex-direction: column;
-    right: 12.5%;
+    right: 18%;
     z-index: 0;
     border: 0.2rem solid var(--pure-black);
     border-radius: 1.5rem;
@@ -787,7 +810,7 @@ button, a.button{
     width: 28vw;
     margin: 0.5%;
     background-color: var(--light-green);
-    height: 15vh;
+    height: 25vh;
     border-radius: 1.5rem;
     text-align: center;
     padding: 6rem 0 2rem;

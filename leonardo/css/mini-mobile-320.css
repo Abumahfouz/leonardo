@@ -2,6 +2,7 @@
     *{
         padding: 0;
         margin: 0;
+        box-sizing: border-box;
     }
     html{
         font-size: 62.5%;
@@ -62,19 +63,20 @@
         box-shadow: 0 0.5rem 1rem var(--overlay);
     }
     .nav-container aside{
-        display: none;
-        visibility: hidden;
+       width: 100%;
         }
     
-    .nav-container .flex-item1 {
-        margin-left: 10rem;
+    .nav-container .flex-item1 img{
+        width: 100%;
+        margin: auto;
     }
     
-    .nav-container .flex-item2{
-        margin-left: 4rem;
-    }
     .nav-container .flex-item3 {
-        margin-left: 4rem;
+        width: 100%;
+    }
+    .nav-container .flex-item3 a.button {
+        font-size: 1rem;
+        margin-left: 1.2rem;
     }
     
     .nav-container ul li{
@@ -791,6 +793,7 @@
         padding-left: 2rem;
     }
     .bg-big{
+        position: relative;
         min-height: 45vh;
         background: url('../images/unsplash_laptop.png');
         width: 80vw;
@@ -808,11 +811,11 @@
         font-size: 3.5rem;
         color: var(--white);
         text-align: center;
-        padding-top: 11rem;
+        padding-top: 8rem !important;
         position: relative;
     }
     .bg-big input[type=search] {
-        margin-left: 18%;
+        margin: 1rem 4rem !important;
         background-color: #cce6e63e;
         position: relative;
         width: 53.5rem;
@@ -825,24 +828,16 @@
         padding: 0 2rem;
     }
     .faq {
-        padding: 1rem 8rem 5rem 12rem;
-    }
-    .faq h3{
-        font-size: 3rem;
-        text-align: center;
-        padding-bottom: 3rem;
-    }
-    .faq .questions-text {
-        font-size: 1.6rem;
-    }
-    .faq .border-bottom {
-        border-bottom: 0.1rem solid var(--pure-black);
+        width: 100%;
         padding: 2rem;
     }
-    .faq .questions-text .flex-box .question {
-        width: 90rem !important;
+    .faq h3 {
+        padding: 1rem;
     }
-    .repair {
+    .faq .questions-text {
+        width: 100%;
+    }
+   .repair {
         background-color: var(--mid-green);
         padding: 3rem 0;
     }
@@ -861,7 +856,8 @@
     }
     .repair .repair-cards .flex-item {
         width: 28vw;
-        margin: 0.5%;
+        margin: 1% !important;
+        height: 15rem !important;
         background-color: var(--light-green);
         height: 15vh;
         border-radius: 1.5rem;
@@ -877,31 +873,47 @@
         text-decoration: none;
         color: var(--dark-green);
         padding-bottom: 0.8rem;
-        border-bottom: 0.3rem solid var(--dark-green);
+        border-bottom: 0.2rem solid var(--dark-green) !important;
     }
 
     .connect {
+        width: 100%;
+        min-height: 100vh;
         padding: 0 !important;
     }
-    .connect .image-wrapper {
-        width: 40%;
+    .connect .content-wrapper {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
-    
+    .connect .image-wrapper {
+        padding: 2rem;
+        min-height: 50%;
+        width: 100vw;
+    }
+    .connect .image-wrapper img{
+        height: auto !important;
+    }
     .connect .content-wrapper .text-wrapper {
         flex-direction: column;
         align-items: center;
+        min-height: 100%;
         align-content: center;
-        width: 40%;
+        width: 100vw !important;
+        padding: 3rem 0!important;
         margin: auto;
     }
+
+    /* contact us button, mobile 320px, 375px
+input:search and overlay for 320px, 375px
+Factor respnsiveness for between 500 - 380px
+ */
     .connect .content-wrapper .text-wrapper .flex-item {
         padding: 1rem 0;
     }
-    .connect .image-wrapper img{
-        scale: 65%;
-    }
+
     .connect .text-wrapper p{
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
     .connect h5 {
         font-size: 2.2rem;

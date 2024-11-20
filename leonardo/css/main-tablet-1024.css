@@ -2,6 +2,7 @@
     *{
         padding: 0;
         margin: 0;
+        box-sizing: border-box;
     }
     html{
         font-size: 62.5%;
@@ -298,7 +299,7 @@
         padding: 2rem 0;
     }
     .discover-home .content-wrapper .flex-item {
-        width: 40vw;
+        width: 50%;
         /* height: 80vh; */
         margin: 1.5rem;
         border-radius: 2rem;
@@ -308,8 +309,8 @@
         padding: 1rem 3rem;
     }
     .discover-home .overlay{
-        padding: 0 !important;
-        width: 37.1vw;
+        padding: 0;
+        width: 100%;
         height: 80vh;
         border-radius: 2rem;
         z-index: 0;
@@ -342,9 +343,7 @@
         background-color: var(--partner-grey);
     }
     .partners .partner-logo li svg {
-        fill: var(--partner-logo-fill)
-        !important
-        ;
+        fill: var(--partner-logo-fill);
         width: 13rem;
     }
     .partners h3{
@@ -474,11 +473,11 @@
         background-color: var(--white);
         height: 60rem;
         flex-direction: column;
-        left: 6%;
         z-index: 0;
+        top: -4rem;
+        left: 3%;
         border: 0.2rem solid var(--pure-black);
         border-radius: 1.5rem;
-        top: -13%;
         box-shadow: 0.01rem 0.01rem 0.3rem 0.003rem var(--black);
     }
     .plans .basic-btn{
@@ -496,19 +495,19 @@
         flex-direction: column;
         border: 0.2rem solid var(--pure-black);
         border-radius: 1.5rem;
-        left: 36%;
-        top: -17%;
         z-index: 1;
+        left: -2%;
+        top: -7rem;
         box-shadow: 0.02rem 0.02rem 0.5rem 0.1rem var(--black);}
     .plans #business{
         background-color: var(--white);
         height: 60rem;
         flex-direction: column;
-        right: 2%;
         z-index: 0;
+        left: -3%;
+        top: -4rem;
         border: 0.2rem solid var(--pure-black);
         border-radius: 1.5rem;
-        top: -13%;
         box-shadow: 0.01rem 0.01rem 0.3rem 0.003rem var(--black);
     }
     .plans button {
@@ -524,12 +523,20 @@
         color: var(--white);
     }
     .plans .image-wrapper{
-        /* margin: auto; */
+
+        position: relative;
+        justify-content: center;
+        /* align-items: center; */
         min-height: 100vh;
         background-color: var(--light-green);
     }
+    .plans .plan {
+        position: relative;
+        width: 100%;
+    }
      .app-link-wrapper{
-        height: 40vh;
+        position: relative;
+        height: 50vh;
         background-color: var(--light-green);
         padding-bottom: 6rem;
     }
@@ -562,7 +569,7 @@
         top: -22%;
     }
     .app-link-wrapper .download-img #iphone {
-        right: -6%;
+        right: -1%;
         top: -7%;
     }
     footer .service {
@@ -790,7 +797,7 @@
         padding: 2rem;
     }
     .faq .questions-text .flex-box .question {
-        width: 90rem !important;
+        width: 90rem;
     }
     .repair {
         background-color: var(--mid-green);
@@ -798,6 +805,7 @@
     }
     .repair .repair-cards{
         width: 90%;
+        height: 20rem;
         margin: auto;
     }
     .repair h3{
@@ -813,7 +821,7 @@
         width: 28vw;
         margin: 0.5%;
         background-color: var(--light-green);
-        height: 15vh;
+        height: 25vh;
         border-radius: 1.5rem;
         text-align: center;
         padding: 3rem 0 2rem;

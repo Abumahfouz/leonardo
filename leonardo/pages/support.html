@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/main-tablet-1024.css" media="(max-width:1024px)">
     <link rel="stylesheet" href="../css/mid-tablet-820.css" media="(max-width:820px)">
     <link rel="stylesheet" href="../css/mini-tablet-768.css" media="(max-width:768px)">
+    <link rel="stylesheet" href="../css/large-mobile.css" media="(max-width:600px")>
     <link rel="stylesheet" href="../css/main-mobile-500.css" media="(max-width:500px)">
     <link rel="stylesheet" href="../css/mini-mobile-320.css" media="(max-width:320px)">
     <link rel="stylesheet" href="../css/mid-mobile-380.css" media="(max-width:380px)">
@@ -60,7 +61,7 @@
                 <input type="text" name="order-number" id="order-number" placeholder="Order Number*">
                 <input type="email" name="email" id="email" placeholder="Email Address*">
                 <input type="tel" name="phone" id="phone" placeholder="Phone Number">
-                <button type="submit">Lookup</button>
+                <button type="submit" onclick="(alert('Submitting...'))">Lookup</button>
             </form>
         </div>
         <div class="bg-big relative">
@@ -161,13 +162,13 @@
     </section>
 
     <section class="app-links">
-        <div class="app-link-wrapper flex-box">
+        <div class="app-link-wrapper auto flex-box">
             <div class="download-content flex-item flex-item1">
                 <h3>Get the Leonardo Smart <br> Assistant App</h3>
                 <p>The Smarter way to get things done</p>
                 <p>
-                    <span><img src="../images/GOOGLE PLAY.png" alt="Google Play"></span>
-                    <span><img src="../images/APPLE STORE.png" alt="App Store"></span>
+                    <span class="download-btn"><img src="../images/GOOGLE PLAY.png" alt="Google Play"></span>
+                    <span class="download-btn"><img src="../images/APPLE STORE.png" alt="App Store"></span>
                 </p>
             </div>
             <div class="download-img relative flex-item flex-item2">
@@ -222,5 +223,6 @@
             <p>Copyright &copy; 2024 Leonardo. All rights reserved.</p>
         </section>
     </footer>
+    <script src="../js/app.js"></script>
 </body>
 </html>
