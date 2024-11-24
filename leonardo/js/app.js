@@ -61,3 +61,4 @@ responseBtn5.addEventListener('click', displayResponse5);
 console.log(downloadAction);
 
 const faqBtn = document.querySelector('.response');
+
