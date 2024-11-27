@@ -271,9 +271,9 @@ html {
 
 @media screen and (max-width: 380px) {
     
-     #bars {
-        margin-left: 16rem;
-     }
+    #bars {
+        margin-left: 13rem;
+    }
 
      .hero {
         height: 20rem;
@@ -415,4 +415,53 @@ html {
      th {
         font-size: 0.7rem;
      }
+}
+
+
+@media screen and (max-width: 390px) {
+    
+    .intro h2 {
+        font-size: 0.7rem;
+    }
+
+    .intro {
+        padding-top: 7rem;
+        padding-left: 6rem;
+    }
+
+    #bars {
+        margin-left: 20rem;
+    }
+
+    .hero {
+        height: 20rem;
+    }
+
+    #overlay {
+        height: 20rem;
+    }
+
+    .intro-text2 p {
+        font-size: 0.7rem;
+    }
+
+    .big2 h3 {
+        font-size: 1rem;
+    }
+
+    .freq h3 {
+        font-size: 1.2rem;
+    }
+
+    .question4 h5 {
+        font-size: 0.8rem;
+    }
+
+    .question5 h5 {
+        font-size: 0.8rem;
+    }
+
+    .flexbox3 {
+        margin-left: 1rem;
+    }
 }

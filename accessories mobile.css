@@ -20,9 +20,9 @@ html {
     }
 
     #bars {
-        font-size: 3rem;
+        font-size: 4rem;
         display: flex;
-        margin-left: 10rem;
+        margin-left: 9rem;
     }
 
     nav a {
@@ -30,11 +30,11 @@ html {
     }
 
     .intro-text h3 {
-       font-size: 1.5rem;
+       font-size: 1.3rem;
     }
 
     .intro-text p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .two {
@@ -123,6 +123,10 @@ html {
        display: none;
     }
 
+    .smart {
+        margin-left: 1.5rem;
+    }
+
     .smart h3 {
         font-size: 2rem;
     }
@@ -181,11 +185,11 @@ html {
     }
 
     .service p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     footer {
-        height: 115rem;
+        height: 90rem;
     }
 
     .copy {
@@ -193,17 +197,20 @@ html {
     }
 
     table {
-        margin-left: 2rem;
+        margin-left: 0.5rem;
     }
 
     th {
-        font-size: 1.5rem;
-        padding: 4rem 1rem;
+        font-size: 1.2rem;
+        padding: 4rem 0.5rem;
     }
 
     td {
+        padding: 1.5rem 0.5rem;
+    }
+
+    td a {
         font-size: 1rem;
-        padding: 1.5rem 1rem;
     }
 }
 
@@ -282,12 +289,12 @@ html {
 
     th {
         font-size: 1rem;
-        padding: 4rem 1.7rem;
+        padding: 4rem 1rem;
     }
 
     td {
         font-size: 1rem;
-        padding: 1.5rem 1.7rem;
+        padding: 1.5rem 1rem;
     }
 
 } 
