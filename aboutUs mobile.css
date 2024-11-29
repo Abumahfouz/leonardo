@@ -268,11 +268,139 @@ html {
 }
 
 
-
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 430px) {
     
+    .intro-text h3 {
+        font-size: 1rem;
+    }
+
+    .intro-text p {
+        font-size: 0.8rem;
+    }
+
+    .image img {
+       width: 35rem;
+    }
+
+    .sub h3 {
+        font-size: 1.5rem;
+    }
+
+    #adjust {
+        padding-top: 6rem;
+    }
+
+    .big {
+        min-height: 50rem;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+    
+    .big2 h3 {
+        font-size: 1rem;
+    }
+
+    .question4 h5 {
+        font-size: 0.9rem;
+    }
+
+    .service p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 412px) {
+
     #bars {
-        margin-left: 13rem;
+        display: flex;
+        margin-left: 20rem;
+    }
+
+    .intro {
+        padding-left: 3rem;
+    }
+
+    .intro h2 {
+        font-size: 0.9rem;
+    }
+
+    .intro-text {
+        margin-left: 0rem;
+    }
+
+    .intro-text h3 {
+        font-size: 1.3rem;
+    }
+
+    .sub h3 {
+        font-size: 1.5rem;
+    }
+
+    #adjust {
+        padding-top: 6rem;
+    }
+
+    .intro-text2 p {
+        font-size: 0.7rem;
+    }
+
+    .big {
+        min-height: 50rem;
+    }
+
+    .big2 h3 {
+        padding-top: 10rem;
+        font-size: 1rem;
+    }
+    .freq h3 {
+        font-size: 1.1rem;
+    }
+
+    .question h5 {
+        font-size: 0.8rem;
+    }
+
+    .question4 h5 {
+        font-size: 0.9rem;
+    }
+    .question5 h5 {
+        font-size: 0.9rem;
+    }
+
+    .partner1 img {
+        width: 6rem;
+    }
+
+    .smart img {
+     width: 7rem;
+     margin-right: 1rem;
+    }
+
+    .service p {
+        font-size: 1.1rem;
+    }
+
+    table {
+        margin-left: 0;
+    }
+
+    td a {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    
+    #logo {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #bars {
+        display: flex;
+        margin-left: 12rem;
     }
 
      .hero {
@@ -290,6 +418,10 @@ html {
 
      .intro h2 {
         font-size: 0.5rem;
+     }
+
+     .image img {
+        width: 25rem;
      }
 
      .intro-text2 p {
@@ -328,6 +460,155 @@ html {
      .flexbox2 {
         margin-left: 4rem;
      }
+
+     .partner2 img {
+        margin: 0 2rem;
+     }
+
+     .partner2 {
+        margin-left: 2rem;
+     }
+
+     .smart {
+        margin-left: 3rem;
+    }
+
+    .smart-img img {
+        margin-left: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+    
+    #logo {
+        padding-left: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #bars {
+        display: flex;
+        font-size: 4rem;
+        margin-left: 2rem;
+    }
+
+    .intro-text h3 {
+        font-size: 1rem;
+    }
+
+    .intro-text p {
+        font-size: 0.8rem;
+    }
+
+    .image img {
+       width: 25rem;
+    }
+
+    .flexbox1 {
+        margin-left: 1.5rem;
+        margin-right: 0;
+    }
+
+    .flexbox2 {
+        margin-left: 1.5rem;
+        margin-right: 0;
+    }
+
+    .question5 br {
+        display: none;
+    }
+
+    .dummy {
+        margin-left: 0;
+    }
+
+    .partner2 {
+        margin-left: 3rem;
+    }
+
+    .partner2 img {
+        margin: 0 1rem;
+    }
+
+    .smart {
+        margin-left: 3rem;
+    }
+
+    .smart-img img {
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 344px) {
+    
+    
+
+    #logo {
+        padding-left: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #bars {
+        display: flex;
+        font-size: 4rem;
+        margin-left: 2rem;
+    }
+
+     .intro {
+        padding-left: 0;
+    }
+
+    .intro-text h3 {
+        font-size: 1rem;
+    }
+
+    .intro-text p {
+        font-size: 0.8rem;
+    }
+
+    .image img {
+       width: 25rem;
+    }
+
+    .intro-text2 h3 {
+        font-size: 1.2rem;
+    }
+
+    .intro-text2 p {
+        padding: 0.1rem 0.2rem;
+    }
+
+    .flexbox1 {
+        margin-left: 1.5rem;
+        margin-right: 0;
+    }
+
+    .flexbox2 {
+        margin-left: 1.5rem;
+        margin-right: 0;
+    }
+
+    .question5 br {
+        display: none;
+    }
+
+    .partner2 {
+        margin-left: 3rem;
+    }
+
+    .partner2 img {
+        margin: 0 1rem;
+    }
+
+    .smart {
+        margin-left: 3rem;
+    }
+
+    .smart-img img {
+        margin-left: 3rem;
+    }
 }
 
 

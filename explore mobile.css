@@ -203,10 +203,60 @@ html {
 }
 
 
-@media screen and (max-width: 380px) {
+
+@media screen and (max-width: 430px) {
+    
+    .smart {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 414px) {
     
     #bars {
-        margin-left: 18rem;
+        margin-left: 23rem;
+    }
+
+
+}
+
+@media screen and (max-width: 412px) {
+    
+    #logo {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #bars {
+        margin-left: 25rem;
+    }
+
+    .smart {
+        margin-left: 0;
+    }
+
+    .smart h3 {
+        font-size: 2rem;
+    }
+
+    .smart img {
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+    
+    #bars {
+        margin-left: 21rem;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    
+    #bars {
+        margin-left: 22rem;
     }
 
     .flexbox {
@@ -218,6 +268,16 @@ html {
     }
 
 }
+
+
+@media screen and (max-width: 360px) {
+
+    #bars {
+        margin-left: 20rem;
+    }
+
+}
+
 
 @media screen and (max-width: 320px) {
     
