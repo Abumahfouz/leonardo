@@ -1,0 +1,33 @@
+:root {
+    --white: #fff;
+    --overlay: rgba(0, 0, 0, 0.42);
+    --overlay-mid: rgba(0,0,0,0.3);
+    --light-green: #CCE6E6;
+    --dark-green: #008080;
+    --mid-green: #80BFBF;
+    --orange: #FFA500;
+    --black: #001A1A;
+    --blue-transparent: rgba(204,230,230,0.2);
+    --search-text: #AAD5D5;
+    --no-color: rgba(0,0,0,0);
+    --grey: #DBDBDB;
+    --shade-grey: #898989;
+    --pure-black: #000000;
+    --partner-grey: #E6E6E6;
+    --partner-logo-fill: #C0C0C0;
+}
+@media (max-width:2560px) {
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Roboto';
+    width: 100vw;
+}

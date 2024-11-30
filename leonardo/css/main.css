@@ -1,0 +1,878 @@
+:root {
+    --white: #fff;
+    --overlay: rgba(0, 0, 0, 0.42);
+    --overlay-mid: rgba(0,0,0,0.3);
+    --light-green: #CCE6E6;
+    --dark-green: #008080;
+    --mid-green: #80BFBF;
+    --orange: #FFA500;
+    --black: #001A1A;
+    --blue-transparent: rgba(204,230,230,0.2);
+    --search-text: #AAD5D5;
+    --no-color: rgba(0,0,0,0);
+    --grey: #DBDBDB;
+    --shade-grey: #898989;
+    --pure-black: #000000;
+    --partner-grey: #E6E6E6;
+    --partner-logo-fill: #C0C0C0;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Roboto';
+    width: 100vw;
+}
+/* Nav links color animation */
+@keyframes position-switch {
+    from {padding: 1rem 0;}
+    to {padding: 1.2rem 0;}
+}
+.flex-box {
+    display: flex;
+}
+.bold{
+    font-weight: bold;
+}
+.absolute{
+    position: absolute;
+}
+.lang-section {
+    max-width: 100vw;
+    background-color: #001A1A;
+    box-shadow: 0 0.5rem 1rem var(--overlay);
+    position: relative;
+    padding: 1rem 0.5rem 1rem 1rem;
+}
+.lang-section .empty {
+    width: 85vw;
+}
+.lang-section .icons ul li {
+    float: left;
+    list-style: none;
+}
+.lang-section .icons ul li a {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--white);
+    text-decoration: none;
+}
+.lang-section #lang-border{
+    padding-right: 1rem;
+    margin-right: 0.5rem;
+    border-right: 0.3rem solid var(--white);
+}
+.lang-section #padding-right {
+    padding-right: 3.5rem;
+}
+.nav-container{
+    background: var(--light-green);
+    width: 100vw;
+    height: 12vh;
+    font-size: 1.2rem;
+    color: var(--dark-green);
+    box-shadow: 0 0.5rem 1rem var(--overlay);
+}
+.nav-container aside{
+    align-self: center;
+}
+
+.nav-container .flex-item1 {
+    margin-left: 20rem;
+}
+
+.nav-container .flex-item2{
+    margin-left: 8rem;
+}
+.nav-container .flex-item3 {
+    margin-left: 8rem;
+}
+.nav-container .main-logo img{
+    width: 80%;
+}
+.nav-container ul li{
+    list-style-type: none;
+    float: left;
+    padding: 0 2rem;
+    font-size: 1.65rem;
+    font-weight: 550;
+}
+.burger {
+    display: none;
+}
+
+/* .nav-container ul li a:visited, .nav-container ul li a:active{
+    background: var(--dark-green);
+    border-radius: 15px;
+    padding: 1rem;
+    color: var(--white);
+} */
+.nav-container ul li a{
+    text-decoration: none;
+    color: var(--dark-green);
+}
+.nav-container ul li a:link{
+    color: var(--dark-green);
+}
+/* .nav-container ul li a:visited {
+    background-color: var(--dark-green);
+    color: var(--white);
+} */
+
+.nav-container ul li a:hover{
+    background: var(--orange);
+    border-radius: 15px;
+    padding: 1rem;
+    color: var(--white);
+    transition: color 1s;
+    /* animation: position-switch 4s infinite linear; */
+}
+.nav-container ul li:active {
+    color: var(--white);
+}
+#index {
+    background-color: var(--dark-green);
+    color: var(--white);
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+/* .nav-container ul li a:active {
+    background-color: var(--dark-green);
+    color: var(--white);
+} */
+
+.hero {
+    background: url('../images/modern-home-office-with-technology-decoration-generated-by-ai\ 1.png');
+    min-height: 100vh;
+    background-size: cover;
+    width: 100vw;
+    position: relative;
+}
+.hero .content-wrapper .flex-item{
+    vertical-align:middle;
+    padding: 3rem 0;
+}
+.hero #search {
+    width: 36vw;
+    background-color: var(--blue-transparent);
+    color: var(--search-text);
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    border: 0.2rem solid var(--light-green);
+}
+.hero .content-wrapper .flex-item2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding-bottom: 7rem;
+}
+ .hero .content-wrapper .flex-item3{
+    padding-bottom: 0;
+}
+.hero #search::placeholder{
+    color: var(--light-green);
+    font-size: 1.4rem;
+}
+.hero button{
+    margin: 0 2rem;
+}
+.hero button#explore{
+    background-color: var(--no-color);
+    border: 0.2rem solid var(--white);
+}
+.hero button#start{
+    border: 0.2rem solid var(--dark-green);
+}
+.hero button#start:hover, button.more:hover, button:hover, a.button:hover{
+    background-color: var(--orange);
+    border: 0.2rem solid var(--orange);
+    cursor: pointer;
+    transition: background-color 0.7s, border 2s;
+}
+.hero button#explore{
+    cursor: pointer;
+}
+.overlay{
+    width: 100%;
+    background: var(--overlay);
+    min-height: 80vh;
+    position: absolute;
+}
+.hero .content-wrapper {
+    font-size: 4.5rem;
+    color: var(--white);
+    position: absolute;
+    text-align: center;
+    flex-direction: column;
+    width: 85vw;
+    left: 7.5vw;
+    top: 10vh;
+}
+.content-wrapper h1, .content-wrapper p, .content-wrapper .button-holder {
+    align-self: center;
+    text-align: center;
+}
+
+.dynamic-home{
+    min-height: 55vh;
+    width: 100vw;
+    padding: 4rem 0;
+}
+.dynamic-home h5{
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.dynamic-home h3{
+    padding-top: 2rem;
+    font-size: 4.5rem;
+}
+.dynamic-home p{
+    font-size: 2.2rem;
+    text-align: left;
+    padding: 3rem 0;
+}
+.dynamic-home .text-wrapper{
+min-width: 60vw;
+padding: 0 4rem;
+}
+.dynamic-home .content-wrapper .image-wrapper .store-link{
+    padding: 2rem 0;
+}
+.dynamic-home .content-wrapper .image-wrapper .store-link ul li{
+    list-style: none;
+    float: left;
+    padding: 0 1.2rem;
+}
+.about-home{
+    min-height: 80vh;
+    max-width: 100vw;
+    background-color: var(--light-green);
+}
+.about-home .header {
+    max-width: 100%;
+}
+.about-home h3{
+    text-align: right;
+    font-size: 4.5rem;
+    padding: 3rem 10rem;
+    font-weight: bold;
+}
+.relative {
+    position: relative;
+}
+.about-home #tab {
+    position: absolute;
+}
+.about-home #iphone{
+    position: absolute;
+    top: 10rem;
+    left: 3rem;
+}
+.about-home .image-wrapper{
+    width: 45%;
+    padding: 5rem 3rem 5rem 10rem;
+}
+.about-home .text-wrapper{
+    width: 45%;
+    padding: 5rem 10rem 11rem 1rem;
+    border-radius: 0.5rem;
+}
+.about-home .text-wrapper ul{
+    padding: 2rem 0;
+}
+.about-home .text-wrapper ul li{
+    /* width: 90%; */
+    border-bottom: 0.2rem solid var(--light-green);
+    padding: 2rem 0 1rem;
+    list-style: none;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.about-home .action{
+    text-align: right;
+}
+.about-home .content-wrapper{
+    background-color: var(--mid-green);
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+.discover-home {
+    color: var(--white);
+    background-color: var(--black);
+    text-align: center;
+}
+.discover-home p{
+    font-size: 2.2rem;
+}
+.discover-home .top{
+    min-height: 80vh;
+}
+.discover-home h3 {
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+.discover-home .content-wrapper{
+    width: 80vw;
+    margin: auto;
+    color: var(--white);
+}
+.discover-home .content-wrapper .bold {
+    font-size: 3.8rem;
+}
+.discover-home .content-wrapper .bold img{
+    width: 100%;
+}
+.discover-home .content-wrapper .flex-item {
+    width: 37vw;
+    height: 80vh;
+    margin: 1.5rem;
+    border-radius: 2rem;
+}
+.discover-home .content-wrapper .flex-box .flex-item p{
+    text-align: left;
+    padding: 1rem 5rem;
+}
+.discover-home .content-wrapper .overlay{
+    width: 37vw;
+    height: 80vh;
+    padding: 0 !important;
+    border-radius: 2rem;
+    z-index: 0;
+    background-color: var(--overlay-mid);
+}
+.discover-home .black{
+    background-color: var(--pure-black);
+}
+.discover-home .content-wrapper .flex-item .text{
+    position: relative;
+    top: 50%;
+}
+.discover-home .content-wrapper #voice{
+    background: url('../images/Pexels\ Photo\ by\ Andrea\ Piacquadio.png');
+    background-size: cover;
+}
+.discover-home .content-wrapper #control {
+    background: url('../images/Pexels\ Photo\ by\ Kindel\ Media.png');
+    background-size: cover;
+}
+.discover-home .content-wrapper #support{
+    background: url('../images/Pexels\ Photo\ by\ Yan\ Krukau.png');
+    background-size: cover;
+}
+.discover-home .bottom {
+    min-height: 85vh;
+}
+.partners {
+    min-height: 45vh;
+    background-color: var(--partner-grey);
+}
+.partners .partner-logo li svg {
+    fill: var(--partner-logo-fill)
+    !important
+    ;
+}
+
+.partners h3{
+    font-size: 4.5rem;
+    text-align: center;
+    padding: 5rem 0;
+}
+.partners #yellow {
+    color: var(--orange);
+}
+.partners .image-wrapper{
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+.partners .image-wrapper .partner-logo ul li{
+    float: left;
+    padding: 2rem 5rem 2rem;
+    list-style: none;
+}
+.partners .image-wrapper .partner-logo ul {
+    margin: auto;
+}
+.inspired{
+    max-width: 100vw;
+    min-height: 40vh;
+    color: var(--white);
+    background: url('../images/young-woman-using-home-technology\ 2.png');
+    background-size: cover;
+}
+.inspired .content-wrapper{
+    flex-direction: column;
+    font-size: 2.2rem;
+}
+.inspired h2{
+    font-size: 5.3rem;
+    padding: 8rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem var(--pure-black);
+    line-height: 150%;
+}
+.inspired p{
+    padding: 0 20rem;
+    line-height: 150%;
+    text-shadow: 0.1rem 0.1rem var(--pure-black);
+}
+.inspired .action {
+    margin: 5rem 0;
+}
+.plans{
+    width: 100%;
+    height: auto;
+}
+.plans h2{
+    font-size: 5.3rem;
+    text-align: center;
+    padding: 5rem 0 2rem 0;
+}
+.plans h5{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 5rem;
+}
+.plans .plan .mini-logo{
+    text-align: center;
+    align-self: center;
+}
+.plans .plan .mini-logo li img {
+    scale: 60%;
+}
+.pro {
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+}
+.pro-green{
+    color: var(--white);
+    background-color: var(--dark-green);
+}
+.pro-orange {
+    background-color: var(--orange);
+}
+.plans .plan .mini-logo li {
+    font-size: 2.4rem;
+}
+.plans .content-wrapper .image-wrapper .plan{
+    width: 37.5rem;
+    background-color: var(--white);
+    padding: 2rem;
+}
+.plans .content-wrapper .image-wrapper .plan .flex-item {
+    padding: 1rem 0;
+}
+.plans .content-wrapper .image-wrapper .plan ul.mini-logo li{
+    list-style: none;
+    float: left;
+    vertical-align: middle;
+}
+.plans .perks li{
+list-style-image: url('../images/check.png');
+list-style-position: inside;
+font-size: 1.6rem;
+line-height: 150%;
+}
+.plans small.bold{
+    font-size: 1rem;
+    margin: -3rem 0 3rem 20rem;
+}
+.plans p.bold{
+    align-self: flex-start;
+    text-align: left;
+    font-size: 2.4rem;
+}
+.plans .fee{
+    align-self: flex-start;
+    color: var(--shade-grey);
+    font-size: 1.4rem;
+}
+.plans p.bold small{
+    font-size: 1.1rem;
+}
+.plans .plan .title {
+    font-size: 2.2rem;
+    text-align: left;
+}
+.plans #basic {
+    background-color: var(--white);
+    height: 69.2rem;
+    flex-direction: column;
+    left: 14%;
+    z-index: 0;
+    border: 0.2rem solid var(--pure-black);
+    border-radius: 1.5rem;
+    top: -14%;
+    box-shadow: 0.01rem 0.01rem 0.3rem 0.003rem var(--black);
+}
+.plans .basic-btn{
+    margin-top: 18rem;
+}
+.plans .premium-btn{
+    margin-top: 8rem;
+}
+.plans .business-btn{
+    margin-top: 12rem;
+}
+.plans #premium {
+    background-color: var(--white);
+    height: 74.2rem;
+    flex-direction: column;
+    border: 0.2rem solid var(--pure-black);
+    border-radius: 1.5rem;
+    left: 36%;
+    top: -17%;
+    z-index: 1;
+    box-shadow: 0.02rem 0.02rem 0.5rem 0.1rem var(--black);}
+.plans #business{
+    background-color: var(--white);
+    height: 69.2rem;
+    flex-direction: column;
+    right: 18%;
+    z-index: 0;
+    border: 0.2rem solid var(--pure-black);
+    border-radius: 1.5rem;
+    top: -14%;
+    box-shadow: 0.01rem 0.01rem 0.3rem 0.003rem var(--black);
+}
+.plans button {
+    scale: 140%;
+}
+
+.plans .content-wrapper{
+    flex-direction: column;
+}
+.plans .text-wrapper{
+    min-height: 45vh;
+    background-color: var(--mid-green);
+    color: var(--white);
+}
+.plans .image-wrapper{
+    /* margin: auto; */
+    min-height: 100vh;
+    background-color: var(--light-green);
+}
+ .app-link-wrapper{
+    min-height: 40vh;
+    background-color: var(--light-green);
+    padding-bottom: 4rem;
+}
+.app-link-wrapper h3{
+    font-size: 4.5rem;
+    padding: 2rem 0;
+    line-height: 150%;
+}
+
+.app-link-wrapper p{
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 6rem;
+}
+ .app-link-wrapper .flex-item{
+    width: 50%;
+}
+.plans .app-link-wrapper .download-content{
+    padding: 0 6rem;
+}
+.plans .app-link-wrapper .download-img img, .app-links .app-link-wrapper .download-img img{
+    scale: 60%;
+}
+.app-link-wrapper .download-img #tab {
+    left: 10%;
+    top: -22%;
+}
+.app-link-wrapper .download-img #iphone {
+    right: 12%;
+    top: -7%;
+}
+footer .service {
+    color: var(--white);
+    min-height: 32vh;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2.2rem;
+    background-color: var(--black);
+    border-bottom: 0.2rem solid var(--white);
+}
+footer .service h3 {
+    font-size: 5.3rem;
+    padding: 5rem 0 2rem;
+}
+footer ul h3{
+    font-size: 2.2rem;
+}
+footer a.button{
+    scale: 140%;
+    background-color: var(--orange);
+}
+footer button:hover{
+    background-color: #ec8600;
+    border-color: #ec8600;
+}
+footer .service .action{
+    margin-top: 3rem;
+}
+footer .quick-links{
+    padding: 3% 2% 0 10%;
+    min-height: 80vh;
+    background-color: var(--black);
+    border-bottom: 0.1rem solid var(--white);
+}
+footer .quick-links ul {
+    font-size: 1.6rem;
+    width: 22%;
+    color: var(--white);
+    list-style-type: none;
+}
+footer .quick-links ul li{
+    padding: 2rem 0;
+}
+footer .quick-links ul li a {
+    text-decoration: none;
+    color: var(--white);
+}
+footer .quick-links ul li a:hover {
+    color: var(--orange);
+    font-size: 1.7rem;
+    transition: color 1s, font-size 1s;
+
+}
+footer .copy {
+    color: var(--white);
+    min-height: 5vh;
+    background-color: var(--black);
+    font-size: 1.6rem;
+    padding: 2rem 0 0 15rem;
+}
+button, a.button{
+    background-color: var(--dark-green);
+    color: var(--white);
+    padding: 1rem 1.5rem;
+    border-radius: 2.5rem;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+/* Get Inspired Page Styling */
+
+.auto-layout{
+    padding: 8rem;
+}
+.auto-layout .layout-content img{
+    padding: 0 1.5rem;
+    border-radius: 4rem;
+}
+.smarts, .devices{
+    flex-direction: column;
+}
+.smarts h3 {
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 7rem;
+}
+.smarts .image-holder, .smarts .blue-action {
+    align-self: center;
+    padding-bottom: 4rem;
+}
+
+.smarts .image-holder #img-left{
+    margin-right: -2rem;
+}
+.smarts .image-holder #img-right{
+    margin-left: -3rem;
+    z-index: -1;
+}
+.matter {
+    background-color: var(--light-green);
+    flex-direction: column;
+    padding: 3rem 0;
+}
+.matter .image-holder, .devices .text-wrapper, .devices .image-holder {
+    align-self: center;
+}
+.matter h3, .devices h3{
+    font-size: 3rem;
+    text-align: center;
+    padding: 5rem 0;
+}
+.devices .text-wrapper p{
+    font-size: 1.6rem;
+    text-align: center;
+}
+.devices {
+    min-height: 80vh;
+}
+
+
+/* Support Page Styling */
+.help{
+    padding: 6rem 18rem;
+}
+.help h5{
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+}
+.help form{
+    margin: 3rem 0;
+}
+.help form input {
+    width: 29.2rem;
+    height: 4.8rem;
+    border-radius: 1rem;
+    border: 0.12rem solid #818282;
+    margin-right: 2%;
+}
+.help form input::placeholder {
+    padding-left: 2rem;
+}
+.bg-big{
+    min-height: 38vh;
+    background: url('../images/unsplash_laptop.png');
+    width: 80vw;
+    background-size: cover;
+    margin: auto;
+    border-radius: 1.5rem;
+}
+.bg-big .overlay{
+    min-height: 38vh;
+    width: 80vw;
+    border-radius: 1.5rem;
+}
+.bg-big h3 {
+    padding-bottom: 3rem;
+    font-size: 4.5rem;
+    color: var(--white);
+    text-align: center;
+    padding-top: 11rem;
+    position: relative;
+}
+.bg-big input[type=search] {
+    margin-left: 30%;
+    background-color: #cce6e63e;
+    position: relative;
+    width: 53.5rem;
+    height: 4.8rem;
+    border: 0.2rem solid var(--light-green);
+    border-radius: 1rem;
+}
+.bg-big input[type=search]::placeholder {
+    color: var(--light-green);
+    padding: 0 2rem;
+}
+.faq {
+    padding: 1rem 15rem 5rem 10rem;
+}
+.faq h3{
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.faq .questions-text {
+    font-size: 1.6rem;
+}
+.faq .border-bottom {
+    border-bottom: 0.1rem solid var(--pure-black);
+    padding: 3rem;
+}
+.faq .flex-box span {
+    width: 50%;
+}
+.faq .questions-text i {
+    width: 100%;
+    text-align: right;
+}
+.faq-item{
+    border-bottom: 0.1rem solid var(--black);
+    margin-bottom: 1rem;
+}
+.faq-item .question {
+    background-color: var(--light-green);
+    padding: 2rem;
+    font-size: 1.6rem;
+    list-style: none;
+}
+.faq-item .question-tab{
+    display: inline-block;
+    width: 96%;
+}
+.faq-response {
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+    font-size: 1.6rem;
+    padding: 1rem;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+.repair {
+    background-color: var(--mid-green);
+    padding: 3rem 0;
+}
+.repair .repair-cards{
+    width: 90%;
+    margin: auto;
+}
+.repair h3{
+    font-size: 3rem;
+    text-align: center;
+}
+.repair p {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+.repair .repair-cards .flex-item {
+    width: 28vw;
+    margin: 0.5%;
+    background-color: var(--light-green);
+    height: 25vh;
+    border-radius: 1.5rem;
+    text-align: center;
+    padding: 6rem 0 2rem;
+    vertical-align: middle;
+    box-shadow: 0.01rem 0.01rem 0.8rem 0.003rem var(--mid-green);
+
+}
+ .repair .repair-cards .flex-item h5{
+    font-size: 2.5rem;
+}
+.repair .repair-cards .flex-item h5 a{
+    text-decoration: none;
+    color: var(--dark-green);
+    padding-bottom: 0.8rem;
+    border-bottom: 0.3rem solid var(--dark-green);
+}
+
+.connect .content-wrapper .text-wrapper {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 40%;
+    margin: auto;
+}
+.connect .content-wrapper .text-wrapper .flex-item {
+    padding: 2rem 0;
+}
+.connect .image-wrapper img{
+    scale: 80%;
+}
+.connect .text-wrapper p{
+    font-size: 1.6rem;
+}
+.connect h5 {
+    font-size: 2.2rem;
+    align-self: center;
+    text-align: center;
+}
+.app-links .app-link-wrapper{
+    min-height: 47vh;
+    padding: 6rem 0 0 4rem;
+}
