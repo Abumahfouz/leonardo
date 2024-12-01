@@ -1,0 +1,667 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@media screen and (max-width: 1280px) {
+    
+    #logo {
+        margin-right: 7rem;
+        margin-left: 3rem;
+    }
+
+    #contact {
+        margin-left: 4rem;
+    }
+
+    nav li {
+        padding: 3rem 2rem;
+    }
+
+    .flexbox {
+        margin-left: 6rem;
+    }
+
+    .flexbox1 {
+        margin-left: 6rem;
+
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    
+    #logo {
+        margin-right: 3rem;
+        margin-left: 0;
+    }
+
+    #contact {
+        margin-left: 3rem;
+    }
+
+    nav li {
+        padding: 3rem 1rem;
+    }
+
+    #bars {
+        display: none;
+    }
+
+    .intro-text2 {
+        width: 45rem;
+    }
+
+    .intro-text2 p {
+       font-size: 1.5rem;
+    }
+
+    .intro-text3 {
+        width: 45rem;
+    }
+
+    .intro-text3 p {
+      font-size: 1.5rem;
+    }
+
+    .flexbox {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .flexbox1 {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .intro-text4 {
+        width: 45rem;
+    }
+
+    .intro-text5 {
+        width: 45rem;
+    }
+
+    .intro-text4 p {
+        font-size: 1.5rem;
+    }
+
+    .intro-text5 p {
+        font-size: 1.5rem;
+    }
+
+    .smart h3{
+       font-size: 4rem;
+    }
+
+    .smart {
+        padding-top: 2.5rem;
+    }
+
+    .smart img {
+        margin-right: 1rem;
+    }
+
+    .flexbox2 {
+        margin-left: 3rem;
+    }
+
+    .five {
+        height: 105rem;
+    }
+
+    table {
+        margin-left: 5rem;
+    }
+
+    th {
+        font-size: 2rem;
+    }
+
+    td a {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    
+    #logo {
+        margin-left: 0;
+        margin-right: 5rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    nav li {
+        padding: 3rem 1rem;
+    }
+
+    .intro-text2 {
+        width: 40rem;
+    }
+
+    .intro-text3 {
+        width: 40rem;
+    }
+
+    .intro-text4 {
+        width: 40rem;
+    }
+
+    .intro-text5 {
+        width: 40rem;
+    }
+
+    .smart h3 {
+        font-size: 2.5rem;
+    }
+
+    .smart p {
+        font-size: 2rem;
+    }
+
+    .five {
+        height: 300rem;
+    }
+
+    .flexbox3 {
+        flex-direction: column;
+        margin-top: 15rem;
+    }
+
+    .free, .premium, .business {
+        margin-left: 23rem;
+    }
+
+    .premium {
+        margin-top: 10rem;
+    }
+
+    .business {
+        margin-top: 10rem;
+    }
+
+    th {
+        padding: 4rem 1.5rem;
+    }
+
+    td {
+        padding: 1.5rem 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 853px) {
+    
+    #logo {
+        margin-left: 0;
+        margin-right: 4rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    nav li {
+        padding: 3rem 1rem;
+    }
+
+    .intro-text2 {
+        width: 38rem;
+    }
+
+    .intro-text3 {
+        width: 38rem;
+    }
+
+    .intro-text4 {
+        width: 38rem;
+    }
+
+    .intro-text5 {
+        width: 38rem;
+    }
+
+    .smart h3 {
+        font-size: 2.5rem;
+    }
+
+    .flexbox3 {
+        flex-direction: column;
+        margin-top: 15rem;
+    }
+    
+    .five {
+        height: 280rem;
+    }
+   
+    .free {
+        margin-left: 23rem;
+
+    }
+
+    .premium {
+        margin-top: 10rem;
+        margin-left: 23rem;
+
+    }
+    
+    .business {
+        margin-top: 10rem;
+        margin-left: 23rem;
+    }
+     
+    th {
+        padding: 4rem 1.5rem;
+    }
+
+    td {
+        padding: 1.5rem 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 820px) {
+    
+    #logo {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #contact {
+        margin-left: 0;
+    }
+
+    #bars {
+        display: none;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    .intro-text h3 {
+        font-size: 2rem;
+    }
+
+    .intro-text2 {
+        width: 35rem;
+        margin-right: 2rem;
+    }
+
+    .intro-text2 img {
+        width: 20rem;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .intro-text2 p {
+        font-size: 1.3rem;
+    }
+
+    .intro-text3 {
+        width: 35rem;
+    }
+
+    .intro-text3 img {
+        width: 20rem;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .intro-text3 p {
+        font-size: 1.3rem;
+    }
+
+    .intro-text4 {
+        width: 35rem;
+        margin-right: 2rem;
+    }
+
+    .intro-text4 img {
+        width: 20rem;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .intro-text4 p {
+        font-size: 1.3rem;
+    }
+ 
+    .intro-text5 {
+        width: 35rem;
+    }
+
+    .intro-text5 img {
+        width: 20rem;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .intro-text5 p {
+        font-size: 1.3rem;
+    }
+
+    .smart h3 {
+        font-size: 2rem;
+    }
+
+    .smart p {
+        font-size: 1.5rem;
+    }
+
+    .flexbox3 {
+        flex-direction: column;
+    }
+
+    .five {
+        height: 300rem;
+    }
+
+    .free {
+       margin-top: 8rem;
+       margin-left: 15rem;
+    }
+
+    .premium {
+        margin-top: 10rem;
+        margin-left: 15rem;
+    }
+
+    .business {
+        margin-top: 10rem;
+        margin-left: 15rem;
+    }
+
+
+    table {
+        margin-left: 1rem;
+    }
+
+    th {
+        padding: 4rem 2rem;
+    }
+
+    td {
+        padding: 1.5rem;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+     
+
+    .start {
+        display: none;
+    }
+
+    #logo {
+        display: flex;
+        margin-left: 5rem;
+    }
+
+    nav a{
+        display: none;
+    }
+
+    #bars {
+        display: flex;
+        font-size: 4rem;
+        margin-left: 40rem;
+    }
+
+    .intro-text h3 {
+        font-size: 2rem;
+    }
+
+    .intro-text p {
+        font-size: 1.3rem;
+    }
+
+    .intro-text2 {
+        width: 35rem;
+    }
+
+    .intro-text2 img {
+        width: 20rem;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .intro-text2 p {
+        font-size: 1.3rem;
+    }
+
+    .intro-text3{
+        width: 35rem;
+    }
+
+    .intro-text3 img {
+        width: 20rem;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .intro-text4 {
+        width: 35rem;
+    }
+
+    .intro-text4 img {
+        width: 20rem;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .intro-text4 p {
+        font-size: 1.3rem;
+    }
+
+    .intro-text5 {
+        width: 35rem;
+    }
+
+    .intro-text5 img {
+        width: 20rem;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .intro-text5 p {
+        font-size: 1.3rem;
+    }
+
+    .smart h3 {
+        font-size: 2rem;
+    }
+
+    .smart p {
+        font-size: 1.2rem;
+    }
+
+    .flexbox3 {
+        flex-direction: column;
+    }
+
+    .five {
+        height: 300rem;
+    }
+
+    .free {
+       margin-top: 8rem;
+       margin-left: 23rem;
+    }
+
+    .premium {
+        margin-top: 10rem;
+        margin-left: 23rem;
+    }
+
+    .business {
+        margin-top: 10rem;
+        margin-left: 23rem;
+    }
+
+    table {
+        margin-left: 1rem;
+    }
+
+    th {
+        padding: 4rem 2rem;
+    }
+
+    td {
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media screen and (max-width: 642px) {
+    
+    #bars {
+        display: flex;
+        font-size: 4rem;
+        margin-left: 33rem;
+    }
+
+    #logo {
+        margin-left: 0;
+    }
+
+    .intro-text2 img {
+        margin-left: 3rem;
+    }
+
+    .intro-text2 p {
+        font-size: 1rem;
+    }
+
+    .intro-text3 p {
+        font-size: 1rem;
+    }
+
+
+    .intro-text4 p {
+        font-size: 1rem;
+    }
+
+    .intro-text5 p {
+        font-size: 1rem;
+    }
+
+    .intro-text4 {
+        width: 29rem;
+    }
+
+    .intro-text4 img {
+        width: 20rem;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .intro-text5 {
+        width: 29rem;
+    }
+
+    .intro-text5 img {
+        width: 20rem;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .smart h3 {
+        font-size: 1.5rem;
+    }
+
+    .smart-img img{
+       width: 30rem;
+       margin-right: 2rem;
+    }
+
+    #iphone {
+        width: 10rem;
+        bottom: 10rem;
+        right: -2rem;
+    }
+
+    .smart img {
+        width: 10rem;
+    }
+
+    .free, .premium, .business {
+        margin-left: 13rem;
+    }
+
+    .service h3 {
+        font-size: 3rem;
+    }
+
+    footer {
+        height: 105rem;
+    }
+
+}
+
+@media screen and (max-width: 546px) {
+    
+    #bars {
+        display: flex;
+        margin-left: 25rem;
+    }
+
+    .intro-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .flexbox {
+        flex-direction: column;
+        margin-left: 10rem;
+    }
+
+    .intro-text3 {
+        margin-top: 5rem;
+    }
+
+    .flexbox1 {
+        flex-direction: column;
+        margin-left: 10rem;
+    }
+
+    .intro-text4{
+        width: 35rem;
+    }
+
+    .intro-text5 {
+        margin-top: 5rem;
+        width: 35rem;
+    }
+
+    .two {
+        height: 150rem;
+    }
+
+    .three {
+        height: 150rem;
+    }
+
+    .free, .premium, .business {
+        margin-left: 10rem;
+    }
+
+    th {
+        font-size: 1.7rem;
+        padding: 4rem 1rem;
+    }
+
+    td {
+        padding: 1.5rem 1rem;
+    }
+}

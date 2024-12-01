@@ -1,0 +1,576 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .start {
+        display: none;
+    }
+
+    #logo {
+        margin-left: 2rem;
+    }
+
+    #bars {
+        font-size: 4rem;
+        display: flex;
+        margin-left: 9rem;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .intro-text h3 {
+       font-size: 1.3rem;
+    }
+
+    .intro-text p {
+        font-size: 1.1rem;
+    }
+
+    .two {
+        height: 140rem;
+    }
+
+    .intro-text2 img {
+        width: 20rem;
+        margin-bottom: 5rem;
+        margin-top: 5rem;
+    }
+
+    .intro-text2 {
+        width: 35rem;
+        margin-left: 2rem;
+    }
+
+    .intro-text2 p {
+        font-size: 1.3rem;
+    }
+
+    .flexbox {
+        flex-direction: column;
+    }
+
+    .intro-text3 {
+        width: 35rem;
+        margin-left: 2rem;  
+        margin-top: 7rem;
+    }
+
+    .intro-text3 img {
+        width: 20rem;
+        margin: 5rem 0;
+    }
+
+    .intro-text3 p {
+        font-size: 1.3rem;
+    }
+
+    .three {
+        height: 140rem;
+    }
+
+    .flexbox1 {
+        flex-direction: column;
+    }
+
+    .intro-text4 {
+        width: 35rem;
+        margin-left: 2rem;  
+        margin-top: 7rem;
+    }
+    .intro-text4 img {
+        width: 20rem;
+        margin: 5rem 0;   
+    }
+
+    .intro-text4 p {
+        font-size: 1.3rem;
+    }
+
+    .intro-text5 {
+        width: 35rem;
+        margin-left: 2rem;  
+        margin-top: 7rem;
+    }
+    .intro-text5 img {
+        width: 20rem;
+        margin: 5rem 0;   
+    }
+
+    .intro-text5 p {
+        font-size: 1.3rem;
+    }
+
+    .four {
+        height: 80rem;
+    }
+
+    .flexbox2 {
+        flex-direction: column;
+    }
+
+    #iphone {
+       display: none;
+    }
+
+    .smart {
+        margin-left: 1.5rem;
+    }
+
+    .smart h3 {
+        font-size: 2rem;
+    }
+
+    .smart p {
+        font-size: 1.5rem;
+    }
+
+    .smart img {
+       margin-top: 2rem;
+       margin-right: 0;
+    }
+
+    .smart-img img{
+        margin-top: 7rem;
+        width: 35rem;
+    }
+
+    .five {
+        height: 300rem;
+    }
+
+    .flexbox3 {
+        flex-direction: column;
+    }
+
+    .plan h3 {
+        font-size: 3rem;
+    }
+
+    .plan p {
+        font-size: 1.3rem;
+        padding-left: 2rem;
+    }
+
+    .plan {
+        min-height: 20rem;
+    }
+    .free {
+        margin-top: 5rem;
+        margin-left: 3rem;
+    }
+
+    .premium {
+        margin-top: 20rem;
+        margin-left: 3rem;
+    }
+
+    .business {
+        margin-top: 20rem;
+        margin-left: 3rem;
+    }
+
+    .service h3 {
+        font-size: 2.5rem;
+    }
+
+    .service p {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        height: 90rem;
+    }
+
+    .copy {
+        display: none;
+    }
+
+    table {
+        margin-left: 0.5rem;
+    }
+
+    th {
+        font-size: 1.2rem;
+        padding: 4rem 0.5rem;
+    }
+
+    td {
+        padding: 1.5rem 0.5rem;
+    }
+
+    td a {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    
+    .flexbox {
+        margin-left: 1rem;
+     }
+
+     .flexbox1 {
+        margin-left: 1rem;
+     }
+}
+
+@media screen and (max-width: 414px) {
+
+     .flexbox {
+        margin-left: 1rem;
+     }
+
+     .flexbox1 {
+        margin-left: 1rem;
+     }
+}
+
+
+@media screen and (max-width: 412px) {
+    
+    #logo {
+        margin-left: 0;
+    }
+
+    #bars {
+        margin-left: 9rem;
+    }
+
+    .flexbox {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .flexbox1 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .plan p {
+        font-size: 1.1rem;
+    }
+
+    .free, .premium, .business {
+        margin-left: 3rem;
+    }
+
+    td a {
+        font-size: 0.8rem;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 380px) {
+    
+    #logo {
+        margin-left: 0;
+    }
+
+    #bars {
+        font-size: 3rem;
+        margin-left: 7rem;
+    }
+
+    .flexbox {
+        margin-left: 0.5rem;
+    }
+
+    
+    .intro-text p {
+        font-size: 1.2rem;
+    }
+
+    .one {
+        height: 20rem;
+    }
+
+
+    #carry {
+        padding-bottom: 4rem;
+    }
+    
+    .intro-text h3{
+       font-size: 1rem; 
+    }
+
+    .intro-text2 {
+        margin-left: 1rem;
+        width: 32rem;
+    }
+
+    .intro-text3 {
+        margin-left: 1rem;
+        width: 32rem;
+    }
+
+    .intro-text4 {
+        margin-left: 1rem;
+        width: 32rem;
+    }
+
+    .intro-text5 {
+        margin-left: 1rem;
+        width: 32rem;
+    }
+
+    .flexbox1 {
+        margin-left: 0.5rem;
+    }
+
+    .smart-img img {
+        width: 25rem;
+    }
+
+    #iphone {
+        width: 8rem;
+        right: 7rem;
+        bottom: 10rem;
+    }
+
+    .free, .premium, .business {
+        margin-left: 0.3rem;
+    }
+
+    table {
+        margin-left: 0;
+    }
+
+    th {
+        font-size: 1rem;
+        padding: 4rem 1rem;
+    }
+
+    td {
+        font-size: 1rem;
+        padding: 1.5rem 1rem;
+    }
+
+} 
+
+
+@media screen and (max-width: 344px) {
+    
+    #logo {
+        margin-left: 0;
+    }
+
+    #bars {
+        display: flex;
+        font-size: 4rem;
+        margin-left: 2.5rem;
+    }
+
+    .flexbox {
+        margin-left: 0.1rem;
+    }
+
+    .flexbox1 {
+        margin-left: 0.1rem;
+    }
+
+    .free {
+        width: 30rem;
+        height: 65rem;
+    }
+
+    .free h3 {
+        font-size: 1.5rem;
+    }
+
+    .fa-circle-check {
+        margin-right: 0.1rem;
+    }
+    
+    .premium {
+        width: 30rem;
+        height: 75rem;
+    }
+
+    .premium h3 {
+        font-size: 1.5rem; 
+    }
+
+    #try {
+        margin-left: 3rem;
+    }
+
+    .business {
+        width: 30rem;
+        height: 75rem;
+    }
+
+    .business h3 {
+        font-size: 1.5rem; 
+    }
+
+    .free, .premium, .business {
+        margin-left: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+
+        #logo {
+            margin-left: 0;
+        }
+    
+        #bars {
+            display: flex;
+            font-size: 3rem;
+            margin-left: 3rem;
+        }
+    
+        .flexbox {
+            margin-left: 0.7rem;
+        }
+
+        .flexbox1 {
+            margin-left: 0.7rem;
+        }
+
+        .intro-text2 {
+            width: 30rem;
+            margin-left: 0;
+        }
+
+        .intro-text2 p {
+            font-size: 1rem;
+        }
+
+        .intro-text3 {
+            width: 30rem;
+            margin-left: 0;
+        }
+
+        .intro-text3 p {
+            font-size: 1rem;
+        }
+
+        .intro-text4 p {
+            font-size: 1rem;
+        }
+
+        .intro-text5 p {
+            font-size: 1rem;
+        }
+
+        .intro-text4 {
+            width: 30rem;
+            margin-left: 0;
+        }
+
+        .intro-text5 {
+            width: 30rem;
+            margin-left: 0;
+        }
+
+        .intro-text h3 {
+            font-size: 1rem;
+        }
+    
+        .intro-text p {
+            font-size: 0.8rem;
+        }
+
+        .plan h3 {
+            font-size: 2rem;
+        }
+
+        .plan p {
+            font-size: 1rem;
+        }
+
+        .free {
+            width: 30rem;
+            height: 65rem;
+        }
+
+        .free h3 {
+            font-size: 1.5rem;
+        }
+
+        .fa-circle-check {
+            margin-right: 0.1rem;
+        }
+        
+        .premium {
+            width: 30rem;
+            height: 75rem;
+        }
+
+        .premium h3 {
+            font-size: 1.5rem; 
+        }
+
+        #try {
+            margin-left: 3rem;
+        }
+
+        .business {
+            width: 30rem;
+            height: 75rem;
+        }
+
+        .business h3 {
+            font-size: 1.5rem; 
+        }
+
+        table {
+            margin-left: 0;
+        }
+    
+        th {
+            font-size: 0.8rem;
+            padding: 4rem 1rem;
+        }
+    
+        td {
+            padding: 1.5rem 1rem;
+        }
+
+        td a {
+            font-size: 0.6rem;
+        }
+    
+        .service h3 {
+            font-size: 1.5rem;
+        }
+
+        .service p {
+            font-size: 1.2rem;
+        }
+    
+        footer {
+            height: 90rem;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
