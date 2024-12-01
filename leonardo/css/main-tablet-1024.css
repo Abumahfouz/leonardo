@@ -159,22 +159,23 @@
     .hero button#explore{
         cursor: pointer;
     }
+    .hero .overlay{
+        min-height: 80vh;
+    }
     .overlay{
         width: 100%;
         background: var(--overlay);
-        min-height: 80vh;
         position: absolute;
     }
     .hero .content-wrapper {
         font-size: 2.25rem;
         color: var(--white);
-        position: absolute;
+        justify-content: space-around;
+        align-items: center;
         text-align: center;
         flex-direction: column;
         width: 85vw;
-        left: 7.5vw;
-        top: 10vh;
-    }
+        }
     .content-wrapper h1, .content-wrapper p, .content-wrapper .button-holder {
         align-self: center;
         text-align: center;
@@ -236,20 +237,16 @@
     }
     .about-home #tab {
         position: absolute;
-        scale: 70%;
-        left: 0;
+        scale: 100%;
+        left: 10rem;
     }
     .about-home #iphone{
-        scale: 70%;
+        scale: 100%;
         position: absolute;
-        top: 10rem;
-        left: 2rem;
+        top: 14rem;
+        left: 4rem;
     }
-    .about-home .image-wrapper{
-        width: 60%;
-        padding: 5rem 3rem 5rem 10rem;
-    }
-    .about-home .text-wrapper{
+   .about-home .text-wrapper{
         padding: 7rem 10rem 11rem 1rem;
         border-radius: 0.5rem;
     }
@@ -268,6 +265,8 @@
         text-align: right;
     }
     .about-home .content-wrapper{
+        flex-wrap: wrap;
+        justify-content: space-between;
         background-color: var(--mid-green);
         border-top-left-radius: 1.5rem;
         border-top-right-radius: 1.5rem;
@@ -290,6 +289,9 @@
     .discover-home .content-wrapper{
         width: 80vw;
         color: var(--white);
+    }
+    .discover-home .content-wrapper .flex-box{
+        flex-wrap: nowrap;
     }
     .discover-home .content-wrapper .bold {
         font-size: 2.6rem;
@@ -470,49 +472,20 @@
         text-align: left;
     }
     .plans #basic {
-        background-color: var(--white);
-        height: 60rem;
-        flex-direction: column;
-        z-index: 0;
-        top: -4rem;
-        left: 3%;
-        border: 0.2rem solid var(--pure-black);
-        border-radius: 1.5rem;
-        box-shadow: 0.01rem 0.01rem 0.3rem 0.003rem var(--black);
-    }
-    .plans .basic-btn{
-        margin-top: 14rem;
-    }
-    .plans .premium-btn{
-        margin-top: 8rem;
-    }
-    .plans .business-btn{
-        margin-top: 10rem;
+        top: -8rem;
+        left: 1rem;
+        max-width: 30vw;
     }
     .plans #premium {
-        background-color: var(--white);
-        height: 65rem;
-        flex-direction: column;
-        border: 0.2rem solid var(--pure-black);
-        border-radius: 1.5rem;
-        z-index: 1;
-        left: -2%;
-        top: -7rem;
-        box-shadow: 0.02rem 0.02rem 0.5rem 0.1rem var(--black);}
+        top: -8rem;
+        max-width: 30vw;
+    }
     .plans #business{
-        background-color: var(--white);
-        height: 60rem;
-        flex-direction: column;
-        z-index: 0;
-        left: -3%;
-        top: -4rem;
-        border: 0.2rem solid var(--pure-black);
-        border-radius: 1.5rem;
-        box-shadow: 0.01rem 0.01rem 0.3rem 0.003rem var(--black);
+        top: -8rem;
+        right: 1rem;
+        max-width: 30vw;
     }
-    .plans button {
-        scale: 120%;
-    }
+
     
     .plans .content-wrapper{
         flex-direction: column;
@@ -709,21 +682,6 @@
     .devices .image-holder img{
         height: 50rem;
     }
-    .app-links {
-        background-color: var(--light-green);
-        padding: 2rem 0 4rem;
-    }
-    .app-links .app-link-wrapper{
-        padding: 4rem 0;
-    }
-    .app-links .app-link-wrapper img#tab{
-        left: -20%;
-        top: -40%;
-    }
-    .app-links .app-link-wrapper img#iphone{
-        top: -25%;
-        right: -1%;
-    }
     
     
     /* Support Page Styling */
@@ -865,6 +823,21 @@
         font-size: 2.2rem;
         align-self: center;
         text-align: center;
+    }
+    .app-links {
+        background-color: var(--light-green);
+        padding: 2rem 0 4rem;
+    }
+    .app-links .app-link-wrapper{
+        padding: 4rem 0;
+    }
+    .app-links .app-link-wrapper img#tab{
+        left: -20%;
+        top: -40%;
+    }
+    .app-links .app-link-wrapper img#iphone{
+        top: -25%;
+        right: -1%;
     }
     .app-links .app-link-wrapper{
         padding: 6rem 0 0 4rem;

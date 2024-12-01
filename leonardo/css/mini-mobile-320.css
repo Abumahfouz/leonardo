@@ -57,22 +57,24 @@
     .nav-container{
         background: var(--light-green);
         width: 100vw;
-        height: 12vh;
+        height: auto;
         font-size: 1.2rem;
         color: var(--dark-green);
         box-shadow: 0 0.5rem 1rem var(--overlay);
     }
     .nav-container aside{
        width: 100%;
+       margin: 2rem !important;
         }
     
+    
     .nav-container .flex-item1 img{
-        width: 100%;
         margin: auto;
     }
     
-    .nav-container .flex-item3 {
-        width: 100%;
+    .nav-container .flex-item2{
+        align-self: flex-start;
+        text-align: left;
     }
     .nav-container .flex-item3 a.button {
         font-size: 1rem;
@@ -82,7 +84,7 @@
     .nav-container ul li{
         list-style-type: none;
         float: left;
-        padding: 0 1.5rem;
+        padding: 1rem 0;
         font-size: 1.4rem;
         font-weight: 550;
     }
@@ -165,6 +167,7 @@
     }
     .hero button#explore{
         cursor: pointer;
+        border: none;
         font-size: 1.4rem;
     }
     .overlay{
@@ -188,6 +191,8 @@
     }
     .content-wrapper h1, .content-wrapper p, .content-wrapper .button-holder {
         flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
     
     .dynamic-home{
@@ -200,15 +205,21 @@
     }
     .dynamic-home .content-wrapper .flex-item1{
         order: 2;
+        align-self: flex-start;
+    }
+    .dynamic-home .content-wrapper .flex-item2 {
+        align-self: flex-start;
+        text-align: left;
+        padding: 0;
     }
     .dynamic-home h5{
         padding: 2rem 0 0;
         font-size: 1.6rem;
-        font-weight: bold;
+        font-weight: normal;
     }
     .dynamic-home h3{
         padding-top: 1.8rem;
-        font-size: 2.8rem;
+        font-size: 2rem !important;
     }
     .dynamic-home p{
         font-size: 1.8rem;
@@ -220,12 +231,16 @@
     padding: 0 2rem;
     }
     .dynamic-home .content-wrapper .image-wrapper .store-link{
-        margin-left: 7rem;
+        margin-left: 1rem !important;
         padding: 0.2rem 0;
     }
+    .dynamic-home .image-wrapper {
+        align-self: flex-start;
+        text-align: left;
+    }
     .dynamic-home .image-wrapper svg{
-        scale: 70%;
-        margin: auto;
+        width: 100%;
+        margin-left: 1rem !important;
     }
     .dynamic-home .content-wrapper .image-wrapper .store-link ul li{
         list-style: none;
@@ -233,7 +248,7 @@
         padding: 0 0.2rem;
     }
     .dynamic-home .content-wrapper .image-wrapper .store-link img {
-        width: 10rem;
+        width: 8rem !important;
     }
     .about-home{
         min-height: 100vh;
@@ -245,7 +260,7 @@
     }
     .about-home h3{
         text-align: right;
-        font-size: 3rem;
+        font-size: 2rem !important;
         padding: 3rem;
         font-weight: bold;
     }
@@ -254,16 +269,16 @@
     }
     .about-home #tab {
         position: relative;
-        scale: 50%;
-        left: -46.5%;
-        top: -20%;
+        scale: 100% !important;
+        left: 16.5% !important;
+        top: 2rem !important;
     }
     .about-home #iphone{
         /* display: none; */
-        scale: 40%;
+        scale: 120% !important;
         position: absolute;
-        bottom: 0;
-        left: -2rem;
+        top: 6.5rem !important;
+        left: 5rem !important;
     }
     .about-home .image-wrapper{
         order: 0;
@@ -272,7 +287,7 @@
     }
     .about-home .text-wrapper{
         order: 2;
-        width: 90%;
+        width: 100% !important;
         padding: 1rem 6rem 5rem 5rem;
         border-radius: 0.5rem;
     }
@@ -336,8 +351,8 @@
     }
     .discover-home .overlay{
         padding: 0 !important;
-        width: 90vw;
         height: 80vh;
+        width: 100% !important;
         border-radius: 2rem;
         z-index: 0;
         background-color: var(--overlay-mid);
@@ -509,15 +524,10 @@
         text-align: left;
     }
     .plans #basic {
-        position: relative;
-        background-color: var(--white);
-        height: 60rem;
+        min-height: 55rem;
         flex-direction: column;
         left: 0;
-        border: 0.2rem solid var(--pure-black);
-        border-radius: 1.5rem;
-        top: 0%;
-        box-shadow: 0.01rem 0.01rem 0.3rem 0.003rem var(--black);
+        top: -14rem !important;
     }
     .plan{
         scale: 90%;
@@ -532,24 +542,13 @@
         margin-top: 10rem;
     }
     .plans #premium {
-        position: relative;
-        background-color: var(--white);
-        height: 65rem;
-        flex-direction: column;
-        border: 0.2rem solid var(--pure-black);
-        border-radius: 1.5rem;
-        left: 1%;
-        box-shadow: 0.02rem 0.02rem 0.5rem 0.1rem var(--black);}
+        min-height: 80rem !important;
+        top: -16rem;
+    }
     .plans #business{
-        position: relative;
-        background-color: var(--white);
-        height: 60rem;
+        min-height: 65rem;
         flex-direction: column;
-        right: 0;
-        border: 0.2rem solid var(--pure-black);
-        border-radius: 1.5rem;
-        top: -13%;
-        box-shadow: 0.01rem 0.01rem 0.3rem 0.003rem var(--black);
+        top: -20rem !important;
     }
     .plans button {
         scale: 120%;
@@ -570,12 +569,9 @@
         background-color: var(--light-green);
     }
      .app-link-wrapper{
-        width: 100%;
-        min-height: 100vh;
-        background-color: var(--light-green);
+        min-height: 90vh !important;
         padding-bottom: 2rem;
-        position: relative;
-        margin-top: -8%;
+        margin-top: -35% !important;
         flex-direction: column;
 
     }
@@ -594,6 +590,7 @@
     }
      .app-link-wrapper .flex-item{
         width: 80%;
+        align-self: flex-start;
     }
     .plans .app-link-wrapper .download-content{
         order: 2;
@@ -605,8 +602,8 @@
 
     .plans .app-link-wrapper .download-img #tab {
         position: relative;
-        scale: 40%;
-        left: -18rem;
+        scale: 45% !important;
+        left: -15rem !important;
         top: -5rem;
     }
     .app-link-wrapper .download-img {
@@ -617,7 +614,7 @@
     }
     footer .service {
         color: var(--white);
-        min-height: 38vh;
+        min-height: 22vh !important;
         flex-direction: column;
         text-align: center;
         font-size: 1.2rem;
@@ -634,10 +631,6 @@
     footer a.button{
         scale: 80%;
         background-color: var(--orange);
-    }
-    footer button:hover{
-        background-color: #ec8600;
-        border-color: #ec8600;
     }
     footer .service .action{
         margin-top: 3rem;
@@ -674,7 +667,7 @@
         background-color: var(--black);
         font-size: 1.2rem;
         padding: 2rem 0 0 1rem;
-        text-align: center;
+        text-align: left;
     }
     button, a.button{
         background-color: var(--dark-green);
@@ -737,7 +730,8 @@
         align-self: center;
     }
     .matter .image-holder img {
-        height: 50rem;
+        height: auto;
+        width: 100%;
     }
     .matter h3, .devices h3{
         font-size: 2.6rem;
@@ -752,28 +746,15 @@
         min-height: 80vh;
     }
     .devices .image-holder img{
-        height: 50rem;
-    }
-    .app-links {
-        background-color: var(--light-green);
-        padding: 2rem 0 4rem;
-    }
-    .app-links .app-link-wrapper{
-        padding: 4rem 0;
-    }
-    .app-links .app-link-wrapper img#tab{
-        left: -20%;
-        top: -40%;
-    }
-    .app-links .app-link-wrapper img#iphone{
-        top: -25%;
-        right: -1%;
+        height: auto;
+        width: 100%;
     }
     
     
     /* Support Page Styling */
     .help{
-        padding: 4rem 14rem;
+        width: 100%;
+        padding: 4rem;
     }
     .help h5{
         font-size: 2rem;
@@ -783,32 +764,22 @@
         margin: 2rem 0;
     }
     .help form input {
-        width: 10rem;
-        height: 4.8rem;
-        border-radius: 1rem;
-        border: 0.12rem solid #818282;
-        margin-right: 1rem;
+        min-width: 20rem;
     }
     .help form input::placeholder {
         padding-left: 2rem;
     }
     .bg-big{
-        position: relative;
-        min-height: 45vh;
-        background: url('../images/unsplash_laptop.png');
+        min-height: 35vh;
         width: 80vw;
-        background-size: cover;
-        margin: auto;
-        border-radius: 1.5rem;
     }
     .bg-big .overlay{
-        min-height: 45vh;
+        min-height: 35vh;
         width: 80vw;
-        border-radius: 1.5rem;
     }
     .bg-big h3 {
         padding-bottom: 3rem;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         color: var(--white);
         text-align: center;
         padding-top: 8rem !important;
@@ -836,6 +807,7 @@
     }
     .faq .questions-text {
         width: 100%;
+        font-size: 1.4rem !important;
     }
    .repair {
         background-color: var(--mid-green);
@@ -859,7 +831,7 @@
         margin: 1% !important;
         height: 15rem !important;
         background-color: var(--light-green);
-        height: 15vh;
+        min-height: 12vh;
         border-radius: 1.5rem;
         text-align: center;
         padding: 3rem 0 2rem;
@@ -867,7 +839,7 @@
         box-shadow: 0.01rem 0.01rem 0.8rem 0.003rem var(--mid-green);
     }
      .repair .repair-cards .flex-item h5{
-        font-size: 2rem;
+        font-size: 1rem;
     }
     .repair .repair-cards .flex-item h5 a{
         text-decoration: none;
@@ -920,7 +892,5 @@ Factor respnsiveness for between 500 - 380px
         align-self: center;
         text-align: center;
     }
-    .app-links .app-link-wrapper{
-        padding: 6rem 0 0 4rem;
-    }
+
 }

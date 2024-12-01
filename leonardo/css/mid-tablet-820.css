@@ -167,10 +167,12 @@
         cursor: pointer;
         font-size: 1.4rem;
     }
+    .hero .overlay {
+        min-height: 80vh;
+    }
     .overlay{
         width: 100%;
         background: var(--overlay);
-        min-height: 80vh;
         position: absolute;
     }
     .hero h1{
@@ -178,13 +180,7 @@
     }
     .hero .content-wrapper {
         font-size: 1.6rem;
-        color: var(--white);
-        position: absolute;
-        text-align: center;
-        flex-direction: column;
         width: 85vw;
-        left: 7.5vw;
-        top: 10vh;
     }
     .content-wrapper h1, .content-wrapper p, .content-wrapper .button-holder {
         flex-direction: column;
@@ -717,28 +713,13 @@
         text-align: center;
     }
     .devices {
-        min-height: 100vh;
+        min-height: 60vh;
     }
     .devices .image-holder img{
-        height: 40rem;
+        height: auto;
+        width: 100%;
         padding-bottom: 2rem;
     }
-    .app-links {
-        background-color: var(--light-green);
-        padding: 2rem 0 4rem;
-    }
-    .app-links .app-link-wrapper{
-        padding: 4rem 0;
-    }
-    .app-links .app-link-wrapper img#tab{
-        left: -20%;
-        top: -40%;
-    }
-    .app-links .app-link-wrapper img#iphone{
-        top: -25%;
-        right: -1%;
-    }
-    
     
     /* Support Page Styling */
     .help{
@@ -892,23 +873,41 @@
         font-size: 2.4rem;
         margin-top: -5rem;
     }
-    .app-links{
+
+    .app-links {
+        padding: 20rem 0 0;
+        background-color: var(--light-green);
+        padding: 2rem 0 4rem;
+        height: auto;
         position: relative;
     }
     .app-links .app-link-wrapper{
         flex-direction: column;
-        padding: 6rem 0 0 4rem;
-    }
-    .app-links .app-link-wrapper .download-content{
+        justify-content: space-between;
+        align-items: flex-start;
         position: relative;
-        margin-top: 9rem;
-        order: 2;
-        top: 32rem;
+        padding: 2rem 0;
+    }
+    .app-links .app-link-wrapper .download-content {
+        width: 100%;
+        align-self: center;
+        position: absolute;
+        top: 15rem;
+        left: 2rem;
     }
     .app-links .app-link-wrapper .download-img {
-        top: -7rem;
-        left: -2rem;
-        position: relative;
-        order: 1;
+        width: 100%;
+        align-self: center;
     }
+    .app-links .app-link-wrapper img#tab{
+        left: 4.4rem;
+        top: 4rem;
+    }
+    .app-links .app-link-wrapper img#iphone{
+        display: flex;
+        left: 2rem;
+        top: 3rem;
+        scale: 50%;
+    }
+
 }

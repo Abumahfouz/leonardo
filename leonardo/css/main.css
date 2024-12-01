@@ -35,6 +35,7 @@ body {
 }
 .flex-box {
     display: flex;
+    flex-wrap: wrap;
 }
 .bold{
     font-weight: bold;
@@ -154,6 +155,10 @@ body {
     width: 100vw;
     position: relative;
 }
+.hero .content-wrapper {
+    justify-content: center;
+    align-items: center;
+}
 .hero .content-wrapper .flex-item{
     vertical-align:middle;
     padding: 3rem 0;
@@ -197,10 +202,12 @@ body {
 .hero button#explore{
     cursor: pointer;
 }
+.hero .overlay {
+    height: 100%;
+}
 .overlay{
     width: 100%;
     background: var(--overlay);
-    min-height: 80vh;
     position: absolute;
 }
 .hero .content-wrapper {
@@ -215,6 +222,9 @@ body {
 }
 .content-wrapper h1, .content-wrapper p, .content-wrapper .button-holder {
     align-self: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
 }
 
@@ -337,7 +347,7 @@ padding: 0 4rem;
     text-align: left;
     padding: 1rem 5rem;
 }
-.discover-home .content-wrapper .overlay{
+.discover-home .content-wrapper p.overlay{
     width: 37vw;
     height: 80vh;
     padding: 0 !important;
@@ -504,7 +514,7 @@ line-height: 150%;
     background-color: var(--white);
     height: 69.2rem;
     flex-direction: column;
-    left: 14%;
+    left: 28rem;
     z-index: 0;
     border: 0.2rem solid var(--pure-black);
     border-radius: 1.5rem;
@@ -526,7 +536,7 @@ line-height: 150%;
     flex-direction: column;
     border: 0.2rem solid var(--pure-black);
     border-radius: 1.5rem;
-    left: 36%;
+    /* left: 36%; */
     top: -17%;
     z-index: 1;
     box-shadow: 0.02rem 0.02rem 0.5rem 0.1rem var(--black);}
@@ -534,8 +544,9 @@ line-height: 150%;
     background-color: var(--white);
     height: 69.2rem;
     flex-direction: column;
-    right: 18%;
+    right: 25.5rem;
     z-index: 0;
+    flex: 1;
     border: 0.2rem solid var(--pure-black);
     border-radius: 1.5rem;
     top: -14%;
@@ -555,10 +566,16 @@ line-height: 150%;
 }
 .plans .image-wrapper{
     /* margin: auto; */
+    align-items: center;
+    justify-content: space-around;
     min-height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
     background-color: var(--light-green);
 }
  .app-link-wrapper{
+    flex-wrap: wrap;
+    justify-content: space-between;
     min-height: 40vh;
     background-color: var(--light-green);
     padding-bottom: 4rem;
@@ -585,11 +602,11 @@ line-height: 150%;
     scale: 60%;
 }
 .app-link-wrapper .download-img #tab {
-    left: 10%;
+    left: 10rem;
     top: -22%;
 }
 .app-link-wrapper .download-img #iphone {
-    right: 12%;
+    right: 13rem;
     top: -7%;
 }
 footer .service {
@@ -620,7 +637,7 @@ footer .service .action{
     margin-top: 3rem;
 }
 footer .quick-links{
-    padding: 3% 2% 0 10%;
+    justify-content: space-around;
     min-height: 80vh;
     background-color: var(--black);
     border-bottom: 0.1rem solid var(--white);
@@ -649,7 +666,7 @@ footer .copy {
     min-height: 5vh;
     background-color: var(--black);
     font-size: 1.6rem;
-    padding: 2rem 0 0 15rem;
+    padding: 2rem 0 0 2rem;
 }
 button, a.button{
     background-color: var(--dark-green);

@@ -12,29 +12,36 @@ html{
     .lang-section .empty {
         width: 70%;
     }
+    .nav-container {
+        min-height: 30vh;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
     .nav-container .flex-item1{
-        width: 10%;
+        width: 18%;
     }
     .nav-container .main-logo img {
         width: 100%;
     }
     .nav-container .flex-item2 {
-        width: 70%;
+        width: 80%;
+        align-self: center;
+        text-align: center;
     }
     .nav-container .flex-item3{
-        width: 15%;
+        align-self: center;
+        text-align: center;
+        width: 100%;
     }
     .nav-container .flex-item {
-        margin-left: 1rem;
+        margin: 0;
     }
     .nav-container .flex-item2 ul li {
         padding-right: 0.4rem;
     }
     .nav-container .flex-item2 ul li a{
         font-size: 1.1rem;
-    }
-    .nav-container .flex-item3 {
-        width: 100%;
     }
     .nav-container .flex-item3 a.button {
         font-size: 1rem;
@@ -50,6 +57,83 @@ html{
     .nav-container .flex-item3 a.button {
         font-size: 1.1rem;
     }
+    .about-home #tab {
+        left: 2rem;
+    }
+    .about-home #iphone{
+        top: 2rem;
+        left: 25rem;
+        scale: 350%;
+    }
+
+    .plans #basic {
+        height: 80vh;
+        left: -1.4rem;
+        top: -10rem;
+    }
+    .plans #premium {
+        height: 90vh;
+        top: -13.5rem;
+    }
+    .plans #business {
+        height: 80vh;
+        right: -1.8rem;
+        top: -10rem;
+    }
+    .plans h2{
+        font-size: 3rem;
+        text-align: center;
+        padding: 4rem 0 2rem 0;
+    }
+    .plans h5{
+        text-align: center;
+        font-size: 1.6rem;
+        margin-bottom: 1rem !important;
+    }
+    .pro {
+        margin-top: 0.5rem;
+        padding: 1rem 1.5rem;
+        border-radius: 1rem;
+    }
+    #business .pro, #premium .pro {
+        clear: both;
+    }
+    
+    .plans .plan .mini-logo li {
+        font-size: 2rem;
+    }
+    .plans .content-wrapper .image-wrapper .plan{
+        background-color: var(--white);
+        padding: 1rem;
+    }
+    .plans .content-wrapper .image-wrapper .plan .flex-item {
+        padding: 0.5rem 0;
+    }
+    .plan {
+        min-width: 25rem !important;
+    }
+
+    .plans .perks li{
+    font-size: 1rem;
+    line-height: 130%;
+    }
+    .plans small.bold{
+        font-size: 1rem;
+        margin:1rem 0 1rem 0;
+    }
+    .plans p.bold{
+        font-size: 1.6rem;
+    }
+    .plans .fee{
+        font-size: 1.4rem;
+    }
+    .plans p.bold small{
+        font-size: 1.1rem;
+    }
+    .plans .plan .title {
+        font-size: 2rem;
+    }
+    
     .help {
         width: 100%;
         padding: 1rem;

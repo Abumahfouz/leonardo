@@ -17,15 +17,6 @@
         from {padding: 1rem 0;}
         to {padding: 1.2rem 0;}
     }
-    .flex-box {
-        display: flex;
-    }
-    .bold{
-        font-weight: bold;
-    }
-    .absolute{
-        position: absolute;
-    }
     .lang-section {
         max-width: 100vw;
         background-color: #001A1A;
@@ -34,11 +25,7 @@
         padding: 1rem 0.5rem 1rem 1rem;
     }
     .lang-section .empty {
-        max-width: 60%;
-    }
-    .lang-section .icons ul li {
-        float: left;
-        list-style: none;
+        width: 50%;
     }
     .lang-section .icons ul li a {
         font-size: 2rem;
@@ -52,72 +39,40 @@
         border-right: 0.3rem solid var(--white);
     }
     .lang-section #padding-right {
-        padding-right: 2rem;
+        padding-right: 1.5rem;
     }
     .nav-container{
         background: var(--light-green);
         width: 100vw;
         height: auto;
         font-size: 1.2rem;
-        flex-direction: column;
         color: var(--dark-green);
         box-shadow: 0 0.5rem 1rem var(--overlay);
     }
-    .nav-container aside{
-        display: block;
-        visibility: visible;
-        }
-    
-    .nav-container .flex-item1 {
-        margin-left: 0;
-    }
     
     .nav-container .flex-item2{
-        margin-left: 0;
-        padding: 3rem 0;
-        width: 100%;
+        align-self: flex-start;
+        text-align: left;
     }
-    .nav-container .flex-item3 {
-        margin-left: 0;
-        padding: 3rem 0;
+    .nav-container .flex-item3 a.button {
+        font-size: 1rem;
+        margin-left: 1.2rem;
     }
     
     .nav-container ul li{
         list-style-type: none;
-        clear: left;
-        padding: 1rem 1.5rem;
-        font-size: 1.8rem;
-        font-weight: 550;
-        width: 100%;
-    }
-    /* .nav-container ul li a{
-        width: 100vw;
-        background-color: var(--dark-green);
-        color: var(--white);
-    } */
-    .nav-container .main-logo img{
-        scale: 80%;
-    }
-    
-    
-    
-    /* .nav-container ul li a:visited, .nav-container ul li a:active{
-        background: var(--dark-green);
-        border-radius: 15px;
+        float: left;
         padding: 1rem;
-        color: var(--white);
-    } */
+        font-size: 1.4rem;
+        font-weight: 550;
+    }
+    .nav-container .main-logo img{
+        scale: 40%;
+    }
+    
     .nav-container ul li a{
         text-decoration: none;
         color: var(--dark-green);
-    }
-    .nav-container ul li a:hover{
-        background: var(--orange);
-        border-radius: 1.2rem;
-        padding: 0.8rem;
-        color: var(--white);
-        transition: color 1s;
-        /* animation: position-switch 4s infinite linear; */
     }
     
     .hero {
@@ -174,6 +129,7 @@
     }
     .hero button#explore{
         cursor: pointer;
+        border: none;
         font-size: 1.4rem;
     }
     .overlay{
@@ -197,6 +153,8 @@
     }
     .content-wrapper h1, .content-wrapper p, .content-wrapper .button-holder {
         flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
     
     .dynamic-home{
@@ -217,62 +175,55 @@
     }
     .dynamic-home h3{
         padding-top: 1.8rem;
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
     .dynamic-home p{
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         text-align: left;
         padding: 2rem 0;
     }
     .dynamic-home .text-wrapper{
     max-width: 100vw;
-    padding: 0 2rem;
+    padding: 0 1rem;
+    align-self: flex-start;
+    text-align: left;
     }
     .dynamic-home .content-wrapper .image-wrapper .store-link{
-        margin-left: 7rem;
+        margin-left: 2rem;
         padding: 0.2rem 0;
     }
     .dynamic-home .image-wrapper svg{
-        scale: 70%;
-        margin: auto;
+        width: 100% !important;
+        text-align: left;
     }
+
     .dynamic-home .content-wrapper .image-wrapper .store-link ul li{
         list-style: none;
         float: left;
         padding: 0 0.2rem;
     }
     .dynamic-home .content-wrapper .image-wrapper .store-link img {
-        width: 10rem;
-    }
-    .about-home{
-        min-height: 100vh;
-        max-width: 100vw;
-        background-color: var(--light-green);
-    }
-    .about-home .header {
-        max-width: 100%;
+        width: 9rem;
     }
     .about-home h3{
         text-align: right;
-        font-size: 2.4rem;
+        font-size: 3rem;
         padding: 3rem;
         font-weight: bold;
     }
-    .relative {
-        position: relative;
-    }
+
     .about-home #tab {
         position: relative;
-        scale: 50%;
-        left: -32.5%;
-        top: -20%;
+        scale: 80%;
+        left: 2rem;
+        top: 2rem;
     }
     .about-home #iphone{
         /* display: none; */
-        scale: 40%;
+        scale:100%;
         position: absolute;
         bottom: 0;
-        left: -2rem;
+        left: 6rem;
     }
     .about-home .image-wrapper{
         order: 0;
@@ -312,8 +263,6 @@
     }
     .discover-home p{
         font-size: 1.8rem;
-        padding: 0 2rem;
-        text-align: left;
 
     }
     .discover-home .top{
@@ -345,10 +294,10 @@
         text-align: left;
         padding: 1rem 2rem;
     }
-    .discover-home .content-wrapper .overlay{
+    .discover-home .overlay{
         padding: 0 !important;
-        width: 90vw;
         height: 80vh;
+        width: 100% !important;
         border-radius: 2rem;
         z-index: 0;
         background-color: var(--overlay-mid);
@@ -383,14 +332,12 @@
     .partners .partner-logo ,.flex-box{
         align-items: center;
     }
-    /* .partner-logo {
-        flex: 1 1 30%;
-    } */
+
     .partners .partner-logo li svg {
         fill: var(--partner-logo-fill)
         !important
         ;
-        width: 4.2rem;
+        width: 5.5rem;
     }
     .partners h3{
         font-size: 3.2rem;
@@ -421,10 +368,10 @@
     }
     .inspired .content-wrapper{
         flex-direction: column;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     .inspired h2{
-        font-size: 2.2rem;
+        font-size: 3rem;
         padding: 5rem 4rem;
         padding-bottom: 4rem;
         text-align: center;
@@ -443,7 +390,7 @@
         font-size: 1.2rem;
     }
     .plans{
-        width: 100%;
+        max-width: 100%;
         height: auto;
         margin: 0;
     }
@@ -520,47 +467,31 @@
         text-align: left;
     }
     .plans #basic {
-        position: relative;
-        background-color: var(--white);
-        height: 50rem;
+        min-height: 55rem;
         flex-direction: column;
         left: 0;
-        border: 0.2rem solid var(--pure-black);
-        border-radius: 1.5rem;
-        top: 0%;
-        box-shadow: 0.01rem 0.01rem 0.3rem 0.003rem var(--black);
+        top: -14rem !important;
     }
     .plan{
         scale: 90%;
     }
     .plans .basic-btn{
-        margin-top: 8rem;
+        margin-top: 10rem;
     }
     .plans .premium-btn{
-        margin-top: 2rem;
+        margin-top: 8rem;
     }
     .plans .business-btn{
-        margin-top: 6rem;
+        margin-top: 10rem;
     }
     .plans #premium {
-        position: relative;
-        background-color: var(--white);
-        height: 55rem;
-        flex-direction: column;
-        border: 0.2rem solid var(--pure-black);
-        border-radius: 1.5rem;
-        left: 1%;
-        box-shadow: 0.02rem 0.02rem 0.5rem 0.1rem var(--black);}
+        min-height: 75rem;
+        top: -16rem;
+    }
     .plans #business{
-        position: relative;
-        background-color: var(--white);
-        height: 50rem;
+        min-height: 65rem;
         flex-direction: column;
-        right: 0;
-        border: 0.2rem solid var(--pure-black);
-        border-radius: 1.5rem;
-        top: -36rem;
-        box-shadow: 0.01rem 0.01rem 0.3rem 0.003rem var(--black);
+        top: -20rem !important;
     }
     .plans button {
         scale: 120%;
@@ -568,11 +499,8 @@
     
     .plans .content-wrapper{
         flex-direction: column;
-        width: 100%;
     }
-
     .plans .text-wrapper{
-        width: 100%;
         min-height: 45vh;
         background-color: var(--mid-green);
         color: var(--white);
@@ -581,18 +509,12 @@
         /* margin: auto; */
         flex-direction: column;
         min-height: 100vh;
-        width: 100%;
         background-color: var(--light-green);
     }
      .app-link-wrapper{
-        width: 100%;
-        min-height: 100vh;
-        background-color: var(--light-green);
+        min-height: 90vh !important;
         padding-bottom: 2rem;
-        position: relative;
-        margin-top: -4%;
-        flex-direction: column;
-
+        margin-top: -35% !important;
     }
     .app-link-wrapper h3{
         margin-top: -12rem;
@@ -609,6 +531,7 @@
     }
      .app-link-wrapper .flex-item{
         width: 80%;
+        align-self: flex-start;
     }
     .plans .app-link-wrapper .download-content{
         order: 2;
@@ -620,8 +543,7 @@
 
     .plans .app-link-wrapper .download-img #tab {
         position: relative;
-        scale: 50%;
-        left: -15.5rem;
+        scale: 40% !important;
         top: -5rem;
     }
     .app-link-wrapper .download-img {
@@ -632,7 +554,7 @@
     }
     footer .service {
         color: var(--white);
-        min-height: 38vh;
+        min-height: 22vh !important;
         flex-direction: column;
         text-align: center;
         font-size: 1.2rem;
@@ -644,15 +566,11 @@
         padding: 3rem 0 1rem;
     }
     footer ul h3{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     footer a.button{
         scale: 80%;
         background-color: var(--orange);
-    }
-    footer button:hover{
-        background-color: #ec8600;
-        border-color: #ec8600;
     }
     footer .service .action{
         margin-top: 3rem;
@@ -665,7 +583,7 @@
         border-bottom: 0.1rem solid var(--white);
     }
     footer .quick-links ul {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         width: 90%;
         color: var(--white);
         list-style-type: none;
@@ -679,7 +597,7 @@
     }
     footer .quick-links ul li a:hover {
         color: var(--orange);
-        font-size: 1.3rem;
+        font-size: 1.7rem;
         transition: color 1s, font-size 1s;
     
     }
@@ -688,7 +606,7 @@
         min-height: 5vh;
         background-color: var(--black);
         font-size: 1.2rem;
-        padding: 2rem 0 0 5.2rem;
+        padding: 2rem 0 0 1rem;
         text-align: left;
     }
     button, a.button{
@@ -704,10 +622,10 @@
     /* Get Inspired Page Styling */
     
     .auto-layout{
-        padding: 2rem;
+        padding: 6rem;
     }
     .auto-layout .layout-content {
-        height: 25rem;
+        height: 45rem;
     }
     .auto-layout .layout-content img{
         height: 100%;
@@ -733,16 +651,15 @@
     
     .smarts .image-holder #img-left{
         margin-right: -2rem;
-        height: 20rem;
+        height: 30rem;
     }
     .smarts .image-holder #img-right{
         margin-left: -2rem;
         z-index: -1;
-        height: 20rem;
+        height: 30rem;
     }
     .smarts #img-mid{
         height: 30rem;
-        display: none;
     }
     .matter {
         background-color: var(--light-green);
@@ -753,7 +670,8 @@
         align-self: center;
     }
     .matter .image-holder img {
-        height: 20rem;
+        height: auto;
+        width: 100%;
     }
     .matter h3, .devices h3{
         font-size: 2.6rem;
@@ -768,38 +686,15 @@
         min-height: 80vh;
     }
     .devices .image-holder img{
-        height: 26rem;
-    }
-    .app-links {
-        background-color: var(--light-green);
-        padding: 2rem 0 1rem;
+        height: auto;
         width: 100%;
-        min-height: 80vh;
-    }
-    .app-links .app-link-wrapper{
-        padding: 2rem 0;
-        width: 100%;
-    }
-    .app-link-wrapper .flex-box{
-        flex-direction: row;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    .app-links .app-link-wrapper img#tab{
-        left: -18rem;
-        display: none;
-    }
-    .app-links .app-link-wrapper img#iphone{
-        top: -25%;
-        left: -1%;
-        display: block;
     }
     
     
     /* Support Page Styling */
     .help{
-        padding: 3rem 1rem;
+        width: 100%;
+        padding: 4rem;
     }
     .help h5{
         font-size: 2rem;
@@ -809,45 +704,42 @@
         margin: 2rem 0;
     }
     .help form input {
-        width: 8rem;
-        height: 3.8rem;
+        width: 12rem;
+        height: 4.8rem;
         border-radius: 1rem;
         border: 0.12rem solid #818282;
-        margin-right: 0.5rem;
+        margin-bottom: 2rem !important;
     }
     .help form input::placeholder {
-        padding-left: 0.2rem;
-    }
-    .help form button {
-        padding: 1rem;
-        margin-top: 2rem;
+        padding-left: 2rem;
     }
     .bg-big{
-        min-height: 30vh;
+        position: relative;
+        min-height: 45vh;
         background: url('../images/unsplash_laptop.png');
-        width: 90vw;
+        width: 80vw;
         background-size: cover;
         margin: auto;
         border-radius: 1.5rem;
     }
     .bg-big .overlay{
-        min-height: 30vh;
-        width: 90vw;
+        min-height: 45vh;
+        width: 80vw;
         border-radius: 1.5rem;
     }
     .bg-big h3 {
-        padding-bottom: 1.8rem;
-        font-size: 1.8rem;
+        padding-bottom: 3rem;
+        font-size: 2rem;
         color: var(--white);
         text-align: center;
-        padding-top: 11rem;
+        padding-top: 8rem !important;
         position: relative;
     }
     .bg-big input[type=search] {
-        margin-left: 13%;
+        margin: 1rem 4rem !important;
         background-color: #cce6e63e;
         position: relative;
-        width: 20.5rem;
+        width: 53.5rem;
         height: 4rem;
         border: 0.2rem solid var(--light-green);
         border-radius: 1rem;
@@ -857,24 +749,17 @@
         padding: 0 2rem;
     }
     .faq {
-        padding: 1rem 2rem 5rem 2rem;
-    }
-    .faq h3{
-        font-size: 2rem;
-        text-align: center;
-        padding-bottom: 3rem;
-    }
-    .faq .questions-text {
-        font-size: 1.4rem;
-    }
-    .faq .border-bottom {
-        border-bottom: 0.1rem solid var(--pure-black);
+        width: 100%;
         padding: 2rem;
     }
-    .faq .questions-text .flex-box .question {
-        width: 90rem !important;
+    .faq h3 {
+        font-size: 2rem;
+        padding: 1rem;
     }
-    .repair {
+    .faq .questions-text {
+        width: 100%;
+    }
+   .repair {
         background-color: var(--mid-green);
         padding: 3rem 0;
     }
@@ -883,7 +768,7 @@
         margin: auto;
     }
     .repair h3{
-        font-size: 2.6rem;
+        font-size: 2rem;
         text-align: center;
     }
     .repair p {
@@ -892,10 +777,11 @@
         padding: 2rem 0;
     }
     .repair .repair-cards .flex-item {
-        width: 30vw;
-        margin: 0.5%;
+        width: 28vw;
+        margin: 1% !important;
+        height: 15rem !important;
         background-color: var(--light-green);
-        height: 10vh;
+        height: 15vh;
         border-radius: 1.5rem;
         text-align: center;
         padding: 3rem 0 2rem;
@@ -909,45 +795,73 @@
         text-decoration: none;
         color: var(--dark-green);
         padding-bottom: 0.8rem;
-        border-bottom: 0.3rem solid var(--dark-green);
+        border-bottom: 0.2rem solid var(--dark-green) !important;
     }
 
     .connect {
+        width: 100%;
+        min-height: 100vh;
         padding: 0 !important;
-        height: auto;
-        margin: 0 !important;
+    }
+    .connect .content-wrapper {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
     .connect .image-wrapper {
-        position: relative;
-        width: 100%;
+        padding: 2rem;
+        min-height: 50%;
+        width: 100vw;
     }
-    
+    .connect .image-wrapper img{
+        height: auto !important;
+    }
     .connect .content-wrapper .text-wrapper {
-        position: relative;
         flex-direction: column;
         align-items: center;
+        min-height: 100%;
         align-content: center;
-        width: 100%;
+        width: 100vw !important;
+        padding: 3rem 1rem!important;
         margin: auto;
-        top: 40rem;
     }
+
+    /* contact us button, mobile 320px, 375px
+input:search and overlay for 320px, 375px
+Factor respnsiveness for between 500 - 380px
+ */
     .connect .content-wrapper .text-wrapper .flex-item {
         padding: 1rem 0;
     }
-    .connect .image-wrapper img{
-        position: absolute;
-        left: 0;
-        width: 100%;
-    }
+
     .connect .text-wrapper p{
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
     .connect h5 {
         font-size: 2.2rem;
         align-self: center;
         text-align: center;
     }
+    .app-links {
+        background-color: var(--light-green);
+        padding: 2rem 0 4rem;
+    }
+    .app-links .app-link-wrapper img#iphone{
+        top: -5rem;
+        left: -2rem;
+    }
+    .app-links .download-img {
+        top: 10rem;
+    }
+    .app-links .download-content {
+        left: 0 !important;
+    }
+
     .app-links .app-link-wrapper{
-        padding: 1rem 0 0 1rem;
+        padding: 6rem 0 0 1rem;
+    }
+    .app-links .app-link-wrapper #tab {
+        scale: 40%;
+        top: 15rem !important;
     }
 }
