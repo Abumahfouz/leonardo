@@ -74,6 +74,7 @@ body {
 .nav-container{
     background: var(--light-green);
     width: 100vw;
+    flex-wrap: nowrap;
     height: 12vh;
     font-size: 1.2rem;
     color: var(--dark-green);
@@ -211,7 +212,7 @@ body {
     position: absolute;
 }
 .hero .content-wrapper {
-    font-size: 4.5rem;
+    font-size: 4rem;
     color: var(--white);
     position: absolute;
     text-align: center;

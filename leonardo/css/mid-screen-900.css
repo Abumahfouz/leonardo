@@ -1,0 +1,42 @@
+@media (max-width:900px) {
+    
+    .nav-container .flex-item1 {
+        margin-left: 2rem;
+    }
+    
+    .nav-container .flex-item2{
+        margin-left: 1rem;
+    }
+    .nav-container .flex-item3 {
+        margin-left: 2rem;
+    }
+    
+    .nav-container ul li{
+        font-weight: 400;
+    }
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+    .hero .content-wrapper h5.flex-item {
+        font-weight: 400;
+    }
+    .dynamic-home h3 {
+        font-size: 2.4rem;
+    }
+    .dynamic-home p {
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+    .discover-home .text, .discover-home p{
+        font-size: 1.6rem;
+    }
+    .discover-home .flex-item p.bold {
+        font-size: 2rem;
+    }
+    .inspired p{
+        font-size: 1.6rem;
+    }
+    .app-link-wrapper {
+        min-height: 60vh;
+    }
+}
