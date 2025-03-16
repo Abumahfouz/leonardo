@@ -1,16 +1,5 @@
 @media (max-width:900px) {
     
-    .nav-container .flex-item1 {
-        margin-left: 2rem;
-    }
-    
-    .nav-container .flex-item2{
-        margin-left: 1rem;
-    }
-    .nav-container .flex-item3 {
-        margin-left: 2rem;
-    }
-    
     .nav-container ul li{
         font-weight: 400;
     }
@@ -20,8 +9,21 @@
     .hero .content-wrapper h5.flex-item {
         font-weight: 400;
     }
+    .discover-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .discover-home h3,
+    .discover-home p {
+        align-self: center;
+    }
+    .discover-home .content-wrapper .flex-item {
+        width: 37%;
+        margin: 1rem;
+    }
     .dynamic-home h3 {
-        font-size: 2.4rem;
+        font-size: 2.4rem; 
     }
     .dynamic-home p {
         font-size: 1.6rem;
@@ -33,10 +35,193 @@
     .discover-home .flex-item p.bold {
         font-size: 2rem;
     }
+    .partners .partner-logo ul {
+        justify-content: center;
+        align-items: center;
+    }
+    .partners .image-wrapper .partner-logo ul li{
+        padding: 1rem;
+    }
     .inspired p{
         font-size: 1.6rem;
     }
+    .plans .image-wrapper {
+        min-height: 100vh;
+        padding: 2rem 0;
+        width: 95%;
+        flex-direction: column;
+    }
+    .plans #business,
+    .plans #premium,
+    .plans #basic {
+        margin: 1rem 0;
+        min-height: 50vh;
+    }
+    .plans small.bold{
+        font-size: 1rem;
+        align-self: center;
+    }
+    .plans .content-wrapper .image-wrapper .plan{
+        width: 53%;
+        padding: 1rem;
+    }
+    .plans .content-wrapper .image-wrapper .plan .left{
+        order: 3;
+    }
     .app-link-wrapper {
         min-height: 60vh;
+    }
+    .app-link-wrapper .download-img #iphone {
+        display: none;
+    }
+    .app-link-wrapper .download-img #tab {
+        scale: 50%;
+    }
+
+}
+
+@media screen and (max-width:800px){
+    .hero {
+        min-height: 70vh;
+    }
+    .discover-home .content-wrapper .flex-item,
+    .discover-home .content-wrapper p.overlay {
+        height: 60vh;
+        width: 44vw;
+    }
+    .about-home {
+        min-height: 50vh;
+    }
+    .about-home #iphone {
+        display: none;
+    }
+    .about-home .image-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .about-home .image-wrapper #tab {
+        width: 500px;
+        height: 400px;
+    }
+    .partners .image-wrapper .partner-logo ul li{
+        padding: 2rem 3rem 2rem;
+    }
+}
+@media screen and (max-width:700px) {
+    .nav-container ul li{
+        margin: 1.5rem 0;
+    }
+    .about-home .content-wrapper{
+        flex-direction: column;
+    }
+    .about-home .text-wrapper {
+        width: 100%;
+        min-height: auto;
+    }
+    .about-home .image-wrapper{
+        align-self: center;
+        width: 100%;
+        order: 2;
+        margin: 0;
+        padding: 0;
+        min-height: auto;
+    }
+    .about-home .image-wrapper img {
+        position: relative !important;
+    }
+    .discover-home .top img {
+        width: 100%;
+        height: 24vh;
+    }
+    .plans #tab {
+        display: none;
+    }
+    .quick-links {
+        flex-direction: column;
+    }
+    footer .quick-links ul {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .nav-container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .nav-container aside {
+        align-self: flex-start;
+    }
+    .nav-container .flex-item3 {
+        align-self: center;
+    }
+    .nav-container ul{
+        flex-direction: column;
+    }
+    .hero .content-wrapper .flex-item3 {
+        width: 100% !important;
+    }
+    .hero #search {
+        width: 100%;
+    }
+    .hero .button-holder {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .hero .get-started,
+    .hero .explore {
+        margin: 2rem 0;
+    }
+    .dynamic-home .image-wrapper svg {
+        width: 300px;
+    }
+    .discover-home .top,
+    .discover-home .bottom {
+        flex-direction: column;
+    }
+    .discover-home .content-wrapper .flex-item,
+    .discover-home .content-wrapper p.overlay {
+        height: 60vh;
+        width: 60vw;
+    }
+    .plans .content-wrapper {
+        flex-wrap: wrap !important;
+    }
+    .plans .content-wrapper .text-wrapper {
+        width: 100%;
+        align-self: center;
+    }
+    .plans h2 {
+        font-size: 3rem;
+    }
+    .plans h5 {
+        font-size: 1.5rem;
+    }
+    .plans .content-wrapper .image-wrapper .plan{
+        width: 73%;
+        padding: 1rem;
+    }
+    .app-link-wrapper .download-content {
+        width: 100%;
+    }
+    .app-link-wrapper .download-content h3 {
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:400px) {
+    .discover-home h3 {
+        font-size: 2rem;
+    }
+    .discover-home .content-wrapper .flex-item,
+    .discover-home .content-wrapper p.overlay {
+        height: 60vh;
+        width: 80vw;
+    }
+    footer .service h3 {
+        font-size: 2.3rem;
+        padding: 5rem 0 1rem;
+    }
+    footer ul h3{
+        font-size: 2rem;
     }
 }
