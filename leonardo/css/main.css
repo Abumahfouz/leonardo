@@ -73,34 +73,30 @@ body {
 }
 .nav-container{
     background: var(--light-green);
-    width: 100vw;
-    flex-wrap: nowrap;
-    height: 12vh;
+    width: 100%;
+    flex-wrap: wrap;
+    min-height: 12vh;
+    padding: 2rem 0;
     font-size: 1.2rem;
     color: var(--dark-green);
     box-shadow: 0 0.5rem 1rem var(--overlay);
+    justify-content: space-around;
 }
 .nav-container aside{
+    margin: 1rem 0;
     align-self: center;
 }
 
-.nav-container .flex-item1 {
-    margin-left: 20rem;
-}
-
-.nav-container .flex-item2{
-    margin-left: 8rem;
-}
-.nav-container .flex-item3 {
-    margin-left: 8rem;
-}
 .nav-container .main-logo img{
     width: 80%;
 }
+.nav-container ul {
+    display: flex;
+    flex-wrap: wrap;
+}
 .nav-container ul li{
     list-style-type: none;
-    float: left;
-    padding: 0 2rem;
+    padding: 0 0.2rem;
     font-size: 1.65rem;
     font-weight: 550;
 }
@@ -115,6 +111,8 @@ body {
     color: var(--white);
 } */
 .nav-container ul li a{
+    border-radius: 2rem;
+    padding: 1rem;
     text-decoration: none;
     color: var(--dark-green);
 }
@@ -128,8 +126,6 @@ body {
 
 .nav-container ul li a:hover{
     background: var(--orange);
-    border-radius: 15px;
-    padding: 1rem;
     color: var(--white);
     transition: color 1s;
     /* animation: position-switch 4s infinite linear; */
@@ -140,7 +136,7 @@ body {
 #index {
     background-color: var(--dark-green);
     color: var(--white);
-    border-radius: 15px;
+    border-radius: 2rem;
     padding: 1rem;
 }
 
@@ -261,7 +257,7 @@ padding: 0 4rem;
 }
 .about-home{
     min-height: 80vh;
-    max-width: 100vw;
+    width: 100%;
     background-color: var(--light-green);
 }
 .about-home .header {
@@ -278,8 +274,10 @@ padding: 0 4rem;
 }
 .about-home #tab {
     position: absolute;
+    width: 90%;
 }
 .about-home #iphone{
+    width: 30%;
     position: absolute;
     top: 10rem;
     left: 3rem;
@@ -289,6 +287,7 @@ padding: 0 4rem;
     padding: 5rem 3rem 5rem 10rem;
 }
 .about-home .text-wrapper{
+    min-height: 70vh;
     width: 45%;
     padding: 5rem 10rem 11rem 1rem;
     border-radius: 0.5rem;
@@ -308,6 +307,9 @@ padding: 0 4rem;
     text-align: right;
 }
 .about-home .content-wrapper{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
     background-color: var(--mid-green);
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
@@ -316,6 +318,8 @@ padding: 0 4rem;
     color: var(--white);
     background-color: var(--black);
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 .discover-home p{
     font-size: 2.2rem;
@@ -329,8 +333,11 @@ padding: 0 4rem;
 }
 .discover-home .content-wrapper{
     width: 80vw;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     color: var(--white);
+    align-self: center;
 }
 .discover-home .content-wrapper .bold {
     font-size: 3.8rem;
@@ -409,8 +416,10 @@ padding: 0 4rem;
     margin: auto;
 }
 .inspired{
-    max-width: 100vw;
+    max-width: 100%;
+    align-items: center;
     min-height: 40vh;
+    justify-content: space-around;
     color: var(--white);
     background: url('../images/young-woman-using-home-technology\ 2.png');
     background-size: cover;
@@ -421,14 +430,12 @@ padding: 0 4rem;
 }
 .inspired h2{
     font-size: 5.3rem;
-    padding: 8rem;
-    padding-bottom: 4rem;
+    padding: 4rem 0 4rem;
     text-align: center;
     text-shadow: 0.1rem 0.1rem var(--pure-black);
     line-height: 150%;
 }
 .inspired p{
-    padding: 0 20rem;
     line-height: 150%;
     text-shadow: 0.1rem 0.1rem var(--pure-black);
 }
@@ -436,8 +443,11 @@ padding: 0 4rem;
     margin: 5rem 0;
 }
 .plans{
-    width: 100%;
+    background-color: var(--light-green);
+    max-width: 100%;
+    overflow-x: hidden;
     height: auto;
+    justify-content: space-around;
 }
 .plans h2{
     font-size: 5.3rem;
@@ -448,6 +458,9 @@ padding: 0 4rem;
     text-align: center;
     font-size: 2.2rem;
     margin-bottom: 5rem;
+}
+.plan {
+    overflow-x: hidden;
 }
 .plans .plan .mini-logo{
     text-align: center;
@@ -472,9 +485,9 @@ padding: 0 4rem;
     font-size: 2.4rem;
 }
 .plans .content-wrapper .image-wrapper .plan{
-    width: 37.5rem;
+    width: 33%;
     background-color: var(--white);
-    padding: 2rem;
+    padding: 1rem;
 }
 .plans .content-wrapper .image-wrapper .plan .flex-item {
     padding: 1rem 0;
@@ -492,7 +505,7 @@ line-height: 150%;
 }
 .plans small.bold{
     font-size: 1rem;
-    margin: -3rem 0 3rem 20rem;
+    align-self: flex-end;
 }
 .plans p.bold{
     align-self: flex-start;
@@ -515,22 +528,22 @@ line-height: 150%;
     background-color: var(--white);
     height: 69.2rem;
     flex-direction: column;
-    left: 28rem;
+    /* left: 28rem; */
     z-index: 0;
     border: 0.2rem solid var(--pure-black);
     border-radius: 1.5rem;
-    top: -14%;
+    /* top: -14%; */
     box-shadow: 0.01rem 0.01rem 0.3rem 0.003rem var(--black);
 }
 .plans .basic-btn{
-    margin-top: 18rem;
-}
+    justify-self: flex-end;
+    }
 .plans .premium-btn{
-    margin-top: 8rem;
-}
+    justify-self: flex-end;
+    }
 .plans .business-btn{
-    margin-top: 12rem;
-}
+    justify-self: flex-end;
+    }
 .plans #premium {
     background-color: var(--white);
     height: 74.2rem;
@@ -538,19 +551,19 @@ line-height: 150%;
     border: 0.2rem solid var(--pure-black);
     border-radius: 1.5rem;
     /* left: 36%; */
-    top: -17%;
+    /* top: -17%; */
     z-index: 1;
     box-shadow: 0.02rem 0.02rem 0.5rem 0.1rem var(--black);}
 .plans #business{
     background-color: var(--white);
     height: 69.2rem;
     flex-direction: column;
-    right: 25.5rem;
+    /* right: 25.5rem; */
     z-index: 0;
     flex: 1;
     border: 0.2rem solid var(--pure-black);
     border-radius: 1.5rem;
-    top: -14%;
+    /* top: -14%; */
     box-shadow: 0.01rem 0.01rem 0.3rem 0.003rem var(--black);
 }
 .plans button {
@@ -561,7 +574,7 @@ line-height: 150%;
     flex-direction: column;
 }
 .plans .text-wrapper{
-    min-height: 45vh;
+    min-height: 24vh;
     background-color: var(--mid-green);
     color: var(--white);
 }
@@ -570,8 +583,10 @@ line-height: 150%;
     align-items: center;
     justify-content: space-around;
     min-height: 100vh;
-    width: 100%;
-    flex-wrap: wrap;
+    align-self: center;
+    width: 50%;
+    
+    /* flex-wrap: wrap; */
     background-color: var(--light-green);
 }
  .app-link-wrapper{
@@ -600,15 +615,17 @@ line-height: 150%;
     padding: 0 6rem;
 }
 .plans .app-link-wrapper .download-img img, .app-links .app-link-wrapper .download-img img{
-    scale: 60%;
+    scale: 80%;
+}
+.app-link-wrapper .download-img {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .app-link-wrapper .download-img #tab {
-    left: 10rem;
-    top: -22%;
-}
-.app-link-wrapper .download-img #iphone {
-    right: 13rem;
-    top: -7%;
+    order: 1;
 }
 footer .service {
     color: var(--white);
@@ -893,4 +910,100 @@ button, a.button{
 .app-links .app-link-wrapper{
     min-height: 47vh;
     padding: 6rem 0 0 4rem;
+}
+
+@media screen and (max-width: 1350px) {
+    .hero .content-wrapper {
+        font-size: 2.5rem;
+    }
+    .dynamic-home h5{
+        font-size: 2rem;
+    }
+    .dynamic-home h3{
+        font-size: 2.5rem;
+    }
+    .dynamic-home p{
+        font-size: 1.5rem;
+    }
+    .discover-home .content-wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .discover-home .top,
+    .discover-home .bottom {
+        justify-content: center;
+        align-self: center;
+    }
+    .discover-home .content-wrapper .flex-item {
+        height: 68vh;
+    }
+    .discover-home .content-wrapper p.overlay{
+        height: 68vh;
+    }
+    .discover-home h3 {
+        font-size: 3rem;
+    }
+    .discover-home .content-wrapper .bold {
+        font-size: 2.5rem;
+    }
+    .discover-home p {
+        font-size: 1.8rem;
+    }
+    .partners h3{
+        font-size: 2.8rem;
+    }
+    .partners .content-wrapper {
+        display:  flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .partners .image-wrapper .partner-logo ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .partners .image-wrapper .partner-logo ul li{
+        float: left;
+        padding: 2rem;
+    }
+    .inspired h2 {
+        font-size: 3rem;
+    }
+    .inspired p {
+        font-size: 1.6rem;
+    }
+    .about-home h3{
+        font-size: 2.8rem;
+        padding: 3rem 10rem;
+        font-weight: bold;
+    }
+    .about-home .content-wrapper .image-wrapper {
+        width: 40%;
+    }
+    .about-home .content-wrapper .image-wrapper #tab {
+        scale: 60%;
+    }
+    .about-home .text-wrapper{
+        min-height: 70vh;
+        width: 55%;
+        padding: 5rem 10rem 11rem 1rem;
+        border-radius: 0.5rem;
+    }
+    .plans h2 {
+        font-size: 3rem;
+    }
+    .plans .image-wrapper{
+        width: 80%;
+    }
+    .plans button {
+        font-size: 1rem ;
+    }
+    .plans .download-img #tab,
+    .plans .download-img #iphone {
+        scale: 60%;
+    }
+    footer .service h3 {
+        font-size: 3rem;
+    }
 }
